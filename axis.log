@@ -38,3 +38,64 @@
 2020-05-01 17:05:25,643 1704   [ost-startStop-1] INFO  n.RequestMappingHandlerAdapter  - Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcherServlet-servlet': startup date [Fri May 01 17:05:25 CST 2020]; parent: Root WebApplicationContext
 2020-05-01 17:05:25,678 1739   [ost-startStop-1] INFO  n.RequestMappingHandlerAdapter  - Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcherServlet-servlet': startup date [Fri May 01 17:05:25 CST 2020]; parent: Root WebApplicationContext
 2020-05-01 17:05:25,743 1804   [ost-startStop-1] INFO  .web.servlet.DispatcherServlet  - FrameworkServlet 'dispatcherServlet': initialization completed in 492 ms
+2020-05-01 18:11:08,961 0      [ost-startStop-1] INFO  work.web.context.ContextLoader  - Root WebApplicationContext: initialization started
+2020-05-01 18:11:09,007 46     [ost-startStop-1] INFO  pport.XmlWebApplicationContext  - Refreshing Root WebApplicationContext: startup date [Fri May 01 18:11:09 CST 2020]; root of context hierarchy
+2020-05-01 18:11:09,044 83     [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from URL [file:/D:/ideaproject/ssm3/target/classes/applicationContext.xml]
+2020-05-01 18:11:09,511 550    [ost-startStop-1] INFO  redAnnotationBeanPostProcessor  - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-05-01 18:11:09,616 655    [ost-startStop-1] INFO  source.DriverManagerDataSource  - Loaded JDBC driver: com.mysql.jdbc.Driver
+2020-05-01 18:11:09,926 965    [ost-startStop-1] INFO  work.web.context.ContextLoader  - Root WebApplicationContext: initialization completed in 963 ms
+2020-05-01 18:11:09,948 987    [ost-startStop-1] INFO  .web.servlet.DispatcherServlet  - FrameworkServlet 'dispatcherServlet': initialization started
+2020-05-01 18:11:09,950 989    [ost-startStop-1] INFO  pport.XmlWebApplicationContext  - Refreshing WebApplicationContext for namespace 'dispatcherServlet-servlet': startup date [Fri May 01 18:11:09 CST 2020]; parent: Root WebApplicationContext
+2020-05-01 18:11:09,951 990    [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [springmvc.xml]
+2020-05-01 18:11:10,101 1140   [ost-startStop-1] INFO  redAnnotationBeanPostProcessor  - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-05-01 18:11:10,239 1278   [ost-startStop-1] INFO  andler.SimpleUrlHandlerMapping  - Mapped URL path [/css/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+2020-05-01 18:11:10,252 1291   [ost-startStop-1] INFO  andler.SimpleUrlHandlerMapping  - Mapped URL path [/img/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+2020-05-01 18:11:10,257 1296   [ost-startStop-1] INFO  andler.SimpleUrlHandlerMapping  - Mapped URL path [/js/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#2'
+2020-05-01 18:11:10,261 1300   [ost-startStop-1] INFO  andler.SimpleUrlHandlerMapping  - Mapped URL path [/plugins/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#3'
+2020-05-01 18:11:10,291 1330   [ost-startStop-1] INFO  n.RequestMappingHandlerMapping  - Mapped "{[/songs/search.do]}" onto public org.springframework.web.servlet.ModelAndView cn.itbro.controller.SongsController.search(java.lang.String)
+2020-05-01 18:11:10,292 1331   [ost-startStop-1] INFO  n.RequestMappingHandlerMapping  - Mapped "{[/songs/findAll.do]}" onto public org.springframework.web.servlet.ModelAndView cn.itbro.controller.SongsController.findAll() throws java.lang.Exception
+2020-05-01 18:11:10,293 1332   [ost-startStop-1] INFO  n.RequestMappingHandlerMapping  - Mapped "{[/songs/addSong.do]}" onto public java.lang.String cn.itbro.controller.SongsController.addSong(java.lang.String,java.lang.String,int)
+2020-05-01 18:11:10,345 1384   [ost-startStop-1] INFO  n.RequestMappingHandlerAdapter  - Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcherServlet-servlet': startup date [Fri May 01 18:11:09 CST 2020]; parent: Root WebApplicationContext
+2020-05-01 18:11:10,378 1417   [ost-startStop-1] INFO  n.RequestMappingHandlerAdapter  - Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcherServlet-servlet': startup date [Fri May 01 18:11:09 CST 2020]; parent: Root WebApplicationContext
+2020-05-01 18:11:10,435 1474   [ost-startStop-1] INFO  .web.servlet.DispatcherServlet  - FrameworkServlet 'dispatcherServlet': initialization completed in 486 ms
+2020-05-01 20:14:34,451 0      [ost-startStop-1] INFO  work.web.context.ContextLoader  - Root WebApplicationContext: initialization started
+2020-05-01 20:14:34,488 37     [ost-startStop-1] INFO  pport.XmlWebApplicationContext  - Refreshing Root WebApplicationContext: startup date [Fri May 01 20:14:34 CST 2020]; root of context hierarchy
+2020-05-01 20:14:34,516 65     [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from URL [file:/D:/ideaproject/ssm3/target/classes/applicationContext.xml]
+2020-05-01 20:14:34,855 404    [ost-startStop-1] INFO  redAnnotationBeanPostProcessor  - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-05-01 20:14:34,970 519    [ost-startStop-1] INFO  source.DriverManagerDataSource  - Loaded JDBC driver: com.mysql.jdbc.Driver
+2020-05-01 20:14:35,251 800    [ost-startStop-1] INFO  work.web.context.ContextLoader  - Root WebApplicationContext: initialization completed in 799 ms
+2020-05-01 20:14:35,277 826    [ost-startStop-1] INFO  .web.servlet.DispatcherServlet  - FrameworkServlet 'dispatcherServlet': initialization started
+2020-05-01 20:14:35,279 828    [ost-startStop-1] INFO  pport.XmlWebApplicationContext  - Refreshing WebApplicationContext for namespace 'dispatcherServlet-servlet': startup date [Fri May 01 20:14:35 CST 2020]; parent: Root WebApplicationContext
+2020-05-01 20:14:35,279 828    [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [springmvc.xml]
+2020-05-01 20:14:35,368 917    [ost-startStop-1] INFO  redAnnotationBeanPostProcessor  - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-05-01 20:14:35,500 1049   [ost-startStop-1] INFO  andler.SimpleUrlHandlerMapping  - Mapped URL path [/css/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+2020-05-01 20:14:35,514 1063   [ost-startStop-1] INFO  andler.SimpleUrlHandlerMapping  - Mapped URL path [/img/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+2020-05-01 20:14:35,518 1067   [ost-startStop-1] INFO  andler.SimpleUrlHandlerMapping  - Mapped URL path [/js/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#2'
+2020-05-01 20:14:35,521 1070   [ost-startStop-1] INFO  andler.SimpleUrlHandlerMapping  - Mapped URL path [/plugins/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#3'
+2020-05-01 20:14:35,554 1103   [ost-startStop-1] INFO  n.RequestMappingHandlerMapping  - Mapped "{[/songs/search.do]}" onto public org.springframework.web.servlet.ModelAndView cn.itbro.controller.SongsController.search(java.lang.String)
+2020-05-01 20:14:35,555 1104   [ost-startStop-1] INFO  n.RequestMappingHandlerMapping  - Mapped "{[/songs/findAll.do]}" onto public org.springframework.web.servlet.ModelAndView cn.itbro.controller.SongsController.findAll() throws java.lang.Exception
+2020-05-01 20:14:35,555 1104   [ost-startStop-1] INFO  n.RequestMappingHandlerMapping  - Mapped "{[/songs/addSong.do]}" onto public java.lang.String cn.itbro.controller.SongsController.addSong(java.lang.String,java.lang.String,int)
+2020-05-01 20:14:35,609 1158   [ost-startStop-1] INFO  n.RequestMappingHandlerAdapter  - Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcherServlet-servlet': startup date [Fri May 01 20:14:35 CST 2020]; parent: Root WebApplicationContext
+2020-05-01 20:14:35,648 1197   [ost-startStop-1] INFO  n.RequestMappingHandlerAdapter  - Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcherServlet-servlet': startup date [Fri May 01 20:14:35 CST 2020]; parent: Root WebApplicationContext
+2020-05-01 20:14:35,705 1254   [ost-startStop-1] INFO  .web.servlet.DispatcherServlet  - FrameworkServlet 'dispatcherServlet': initialization completed in 428 ms
+2020-05-01 21:00:59,859 0      [ost-startStop-1] INFO  work.web.context.ContextLoader  - Root WebApplicationContext: initialization started
+2020-05-01 21:00:59,899 40     [ost-startStop-1] INFO  pport.XmlWebApplicationContext  - Refreshing Root WebApplicationContext: startup date [Fri May 01 21:00:59 CST 2020]; root of context hierarchy
+2020-05-01 21:00:59,960 101    [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from URL [file:/D:/ideaproject/ssm3/target/classes/applicationContext.xml]
+2020-05-01 21:01:00,374 515    [ost-startStop-1] INFO  redAnnotationBeanPostProcessor  - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-05-01 21:01:00,480 621    [ost-startStop-1] INFO  source.DriverManagerDataSource  - Loaded JDBC driver: com.mysql.jdbc.Driver
+2020-05-01 21:01:00,783 924    [ost-startStop-1] INFO  work.web.context.ContextLoader  - Root WebApplicationContext: initialization completed in 923 ms
+2020-05-01 21:01:00,807 948    [ost-startStop-1] INFO  .web.servlet.DispatcherServlet  - FrameworkServlet 'dispatcherServlet': initialization started
+2020-05-01 21:01:00,809 950    [ost-startStop-1] INFO  pport.XmlWebApplicationContext  - Refreshing WebApplicationContext for namespace 'dispatcherServlet-servlet': startup date [Fri May 01 21:01:00 CST 2020]; parent: Root WebApplicationContext
+2020-05-01 21:01:00,809 950    [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [springmvc.xml]
+2020-05-01 21:01:00,902 1043   [ost-startStop-1] INFO  redAnnotationBeanPostProcessor  - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-05-01 21:01:01,066 1207   [ost-startStop-1] INFO  andler.SimpleUrlHandlerMapping  - Mapped URL path [/css/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+2020-05-01 21:01:01,084 1225   [ost-startStop-1] INFO  andler.SimpleUrlHandlerMapping  - Mapped URL path [/img/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+2020-05-01 21:01:01,089 1230   [ost-startStop-1] INFO  andler.SimpleUrlHandlerMapping  - Mapped URL path [/js/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#2'
+2020-05-01 21:01:01,093 1234   [ost-startStop-1] INFO  andler.SimpleUrlHandlerMapping  - Mapped URL path [/plugins/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#3'
+2020-05-01 21:01:01,126 1267   [ost-startStop-1] INFO  n.RequestMappingHandlerMapping  - Mapped "{[/songs/search.do]}" onto public org.springframework.web.servlet.ModelAndView cn.itbro.controller.SongsController.search(java.lang.String)
+2020-05-01 21:01:01,128 1269   [ost-startStop-1] INFO  n.RequestMappingHandlerMapping  - Mapped "{[/songs/editSong.do]}" onto public java.lang.String cn.itbro.controller.SongsController.editSong(java.lang.String,java.lang.String,int,int)
+2020-05-01 21:01:01,128 1269   [ost-startStop-1] INFO  n.RequestMappingHandlerMapping  - Mapped "{[/songs/addSong.do]}" onto public java.lang.String cn.itbro.controller.SongsController.addSong(java.lang.String,java.lang.String,int)
+2020-05-01 21:01:01,128 1269   [ost-startStop-1] INFO  n.RequestMappingHandlerMapping  - Mapped "{[/songs/findAll.do]}" onto public org.springframework.web.servlet.ModelAndView cn.itbro.controller.SongsController.findAll() throws java.lang.Exception
+2020-05-01 21:01:01,184 1325   [ost-startStop-1] INFO  n.RequestMappingHandlerAdapter  - Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcherServlet-servlet': startup date [Fri May 01 21:01:00 CST 2020]; parent: Root WebApplicationContext
+2020-05-01 21:01:01,219 1360   [ost-startStop-1] INFO  n.RequestMappingHandlerAdapter  - Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcherServlet-servlet': startup date [Fri May 01 21:01:00 CST 2020]; parent: Root WebApplicationContext
+2020-05-01 21:01:01,304 1445   [ost-startStop-1] INFO  .web.servlet.DispatcherServlet  - FrameworkServlet 'dispatcherServlet': initialization completed in 497 ms

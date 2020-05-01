@@ -11,4 +11,8 @@ public interface SongsService {
     public void addSong(Songs song);
 
     public List<Songs> findSongsByName(String searchText);
+
+    public void updateSongById(Songs song);
+
+    public void deleteSongById(String id);
 }

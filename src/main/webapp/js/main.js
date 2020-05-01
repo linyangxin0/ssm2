@@ -34,3 +34,25 @@
 //         context:this
 //     });
 // }
+
+//
+// window.operateEvents = {
+//     'click #edit_btn': function (e, value, row, index) {
+//         $("#editModal").modal('show');
+//         $('#edit_id').attr("value",row.id);
+//         $('#edit_user_name').attr("value",row.user_name);
+//         $('#edit_sex').val(row.sex);
+//         $('#edit_age').attr("value",row.age);
+//         $('#edit_mobile_phone').attr("value",row.mobile_phone);
+//         $('#edit_address').attr("value",row.address);
+//     },
+// };
+
+
+function value(id,name,title,status) {
+    $("#edit_id").val(id);
+    $("#edit_name").val(name);
+    $("#edit_title").val(title);
+    $("#edit_status").val(status);
+
+}

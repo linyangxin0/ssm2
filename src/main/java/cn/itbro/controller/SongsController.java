@@ -1,5 +1,6 @@
 package cn.itbro.controller;
 
+import cn.itbro.dao.SongsDao;
 import cn.itbro.domain.Songs;
 import cn.itbro.service.SongsService;
 import org.apache.ibatis.annotations.Param;
@@ -52,6 +53,32 @@ public class SongsController {
         mv.addObject("songsList",songsList);
         mv.setViewName("search-list-show");
         return mv;
+    }
+
+    @RequestMapping("/editSong.do")
+    public String editSong(@RequestParam(name = "name",required = true)String name,
+                           @RequestParam(name = "title",required = true)String title,
+                           @RequestParam(name = "status",required = true)int status,
+                           @RequestParam(name = "id",required = true)int id){
+        Songs song = new Songs();
+        song.setName(name);
+        song.setTitle(title);
+        song.setStatus(status);
+        song.setSort(0);
+        song.setUpdateTime(new Date());
+        song.setId(id);
+
+        System.out.println(song);
+
+        songsService.updateSongById(song);
+
+        return "redirect:findAll.do";
+    }
+
+    @RequestMapping("/deleteSong.do")
+    public String deleteSong(@RequestParam(name = "id",required = true)String id){
+        songsService.deleteSongById(id);
+        return "redirect:findAll.do";
     }
 
 }

@@ -31,4 +31,18 @@ public class SongsServiceImpl implements SongsService {
 
         return songsDao.findSongsByName(searchText);
     }
+
+    @Override
+    public void updateSongById(Songs song) {
+        songsDao.updateNameById(song);
+        songsDao.updateTitleById(song);
+        songsDao.updateUpdateTimeSongById(song);
+        songsDao.updateSortById(song);
+        songsDao.updateStatusById(song);
+    }
+
+    @Override
+    public void deleteSongById(String id) {
+        songsDao.deleteSongById(id);
+    }
 }

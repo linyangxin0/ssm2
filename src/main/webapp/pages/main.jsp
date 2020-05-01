@@ -130,13 +130,14 @@
                     </td>
                     <td class="flex-item">
                         <c:if test="${song.status==0}">
-                            <a href="#">编辑</a>
-                            <a href="#">删除</a>
+                            <a id="edit_btn" data-toggle="modal"
+                               data-target="#editModal" onclick="value('${song.id}','${song.name}','${song.title}','${song.status}')" href="#">编辑</a>
+                            <a href="/songs/deleteSong.do?id=${song.id}">删除</a>
                             <a href="#">预览</a>
                             <a href="#">歌曲信息</a>
                         </c:if>
                         <c:if test="${song.status==1}">
-                            <a href="#">下架</a>
+                            <a href="/songs/deleteSong.do?id=${song.id}">下架</a>
                             <a href="#">歌曲信息</a>
                         </c:if>
                     </td>
@@ -145,8 +146,9 @@
             </tbody>
         </table>
 
-<%--添加歌曲--%>
-        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <%--添加歌曲--%>
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+             aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -161,7 +163,8 @@
                                     歌曲名称:
                                 </label>
                                 <div class="col-sm-8">
-                                    <input type="text" class="form-control" id="name" name="name" placeholder="请输入歌曲名称"/>
+                                    <input type="text" class="form-control" id="name" name="name"
+                                           placeholder="请输入歌曲名称"/>
                                 </div>
                             </div>
 
@@ -170,7 +173,8 @@
                                     手机副标题:
                                 </label>
                                 <div class="col-sm-8">
-                                    <input type="text" class="form-control" id="title" name="title" placeholder="请输入手机副标题"/>
+                                    <input type="text" class="form-control" id="title" name="title"
+                                           placeholder="请输入手机副标题"/>
                                 </div>
                             </div>
 
@@ -187,7 +191,7 @@
                             </div>
                         </div>
                         <div class="modal-footer">
-                            <button type="submit" class="btn btn-primary" id="addUser_btn"">
+                            <button type="submit" class="btn btn-primary" id="addUser_btn">
                                 添加
                             </button>
                             <button type="button" class="btn btn-default"
@@ -201,6 +205,65 @@
             </div><!-- /.modal-dialog -->
         </div><!-- /.modal -->
 
+
+        <%--编辑按键模态框--%>
+        <div class="modal fade" id="editModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+             aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="myModalLabel2">
+                            用户信息
+                        </h4>
+                    </div>
+                    <form action="/songs/editSong.do">
+                        <div class="modal-body">
+                            <input id="edit_id" type="hidden" name="id">
+                            <div class="row">
+                                <label for="edit_name" class="col-sm-4 control-label">
+                                    歌曲名称:
+                                </label>
+                                <div class="col-sm-8">
+                                    <input type="text" class="form-control" id="edit_name" name="name"
+                                           placeholder="请输入歌曲名称"/>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <label for="edit_title" class="col-sm-4 control-label">
+                                    手机副标题:
+                                </label>
+                                <div class="col-sm-8">
+                                    <input type="text" class="form-control" id="edit_title" name="title"
+                                           placeholder="请输入手机副标题"/>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <label for="edit_status" class="col-sm-4 control-label">
+                                    状态:
+                                </label>
+                                <div class="col-sm-8">
+                                    <select id="edit_status" class="form-control" name="status">
+                                        <option value="0">设计中</option>
+                                        <option value="1">发布</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="submit" class="btn btn-primary" id="edit_song_btn">
+                                修改
+                            </button>
+                            <button type="button" class="btn btn-default"
+                                    data-dismiss="modal">
+                                关闭
+                            </button>
+                        </div>
+                    </form>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
 
     </div>
     <!-- 内容区域 /-->
@@ -297,16 +360,16 @@
         src="${pageContext.request.contextPath}/js/main.js"></script>
 <script>
 
-    $(document).ready(function() {
+    $(document).ready(function () {
         // 选择框
         $(".select2").select2();
 
         // WYSIHTML5编辑器
         $(".textarea").wysihtml5({
-            locale : 'zh-CN'
+            locale: 'zh-CN'
         });
         // 全选操作
-        $("#selall").click(function() {
+        $("#selall").click(function () {
             var clicks = $(this).is(':checked');
             if (!clicks) {
                 $("#dataList td input[type='checkbox']").iCheck("uncheck");
