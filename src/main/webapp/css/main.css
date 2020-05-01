@@ -1,0 +1,52 @@
+.top-bar{
+    padding: 20px;
+}
+
+.left-part{
+    display: inline-block;
+    float: left;
+}
+
+.right-part{
+    float: right;
+}
+
+.right-part button{
+    margin-left: 20px;
+}
+
+.top-bar button{
+    border: #8a8a8a 1px solid;
+    border-radius: 10%;
+}
+
+.left-input,.left-button{
+    margin-left: 10px;
+}
+
+.songs-table{
+    width: 100%;
+}
+
+.flex-content{
+    display: flex;
+    height: 50px;
+    line-height: 50px;
+    border-bottom: rgba(153, 164, 172, 0.19) 2px solid;
+}
+
+
+.flex-item{
+    flex: 2;
+    text-align: center;
+}
+
+.check-item{
+    flex: 1;
+    text-align: center;
+}
+
+.select-box{
+    position: relative;
+    top: 10px;
+}
