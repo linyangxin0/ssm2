@@ -71,7 +71,7 @@
 
 <div class="wrapper">
 
-
+    <jsp:include page="header.jsp"></jsp:include>
     <!-- 导航侧栏 -->
     <jsp:include page="aside.jsp"></jsp:include>
     <!-- 导航侧栏 /-->
