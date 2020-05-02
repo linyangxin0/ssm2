@@ -1,9 +1,0 @@
-0:0:0:0:0:0:0:1 - - [01/May/2020:23:06:15 +0800] "GET / HTTP/1.1" 200 26870 http-bio-8085-exec-2 1052
-0:0:0:0:0:0:0:1 - - [01/May/2020:23:09:28 +0800] "GET /songs/findAll.do HTTP/1.1" 200 33293 http-bio-8085-exec-2 1090
-0:0:0:0:0:0:0:1 - - [01/May/2020:23:09:28 +0800] "GET /plugins/adminLTE/css/AdminLTE.css HTTP/1.1" 200 110374 http-bio-8085-exec-3 4
-0:0:0:0:0:0:0:1 - - [01/May/2020:23:09:33 +0800] "GET /songs/findAll.do HTTP/1.1" 200 33293 http-bio-8085-exec-4 20
-0:0:0:0:0:0:0:1 - - [01/May/2020:23:14:26 +0800] "GET /logout.do HTTP/1.1" 404 949 http-bio-8085-exec-7 5
-0:0:0:0:0:0:0:1 - - [01/May/2020:23:24:03 +0800] "GET / HTTP/1.1" 200 27311 http-bio-8085-exec-2 129
-0:0:0:0:0:0:0:1 - - [01/May/2020:23:24:03 +0800] "GET /plugins/adminLTE/css/AdminLTE.css HTTP/1.1" 304 - http-bio-8085-exec-3 5
-0:0:0:0:0:0:0:1 - - [01/May/2020:23:24:03 +0800] "GET /js/main.js HTTP/1.1" 200 1696 http-bio-8085-exec-4 2
-0:0:0:0:0:0:0:1 - - [01/May/2020:23:24:04 +0800] "GET /favicon.ico HTTP/1.1" 404 973 http-bio-8085-exec-5 2

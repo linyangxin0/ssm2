@@ -23,7 +23,7 @@
 
         <ul class="sidebar-menu">
             <%--            <li id="admin-index"><a--%>
-            <%--                    href="${pageContext.request.contextPath}/pages/main.jsp"><i--%>
+            <%--                    href="${pageContext.request.contextPath}/pages/songs-list.jsp"><i--%>
             <%--                    class="fa fa-dashboard"></i> <span>首页</span></a></li>--%>
 
             <li class="treeview"><a href="#"> <i class="fa fa-cube"></i>

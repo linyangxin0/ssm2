@@ -1,4 +1,5 @@
 cn\itbro\controller\SongsController.class
+cn\itbro\dao\SongsDao.class
 cn\itbro\service\impl\UserServiceImpl.class
 cn\itbro\dao\IPermissionDao.class
 cn\itbro\dao\IRoleDao.class
