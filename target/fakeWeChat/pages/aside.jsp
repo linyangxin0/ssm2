@@ -50,7 +50,7 @@
                     </a></li>
                 </ul>
             </li>
-            <li class="treeview"><a href="#"> <i class="fa fa-cube"></i>
+            <li class="treeview"><a href="#"> <i class="fa fa-dashboard"></i>
                 <span>应用管理</span> <span class="pull-right-container"> <i
                         class="fa fa-angle-left pull-right"></i>
 				</span>
@@ -69,7 +69,7 @@
                 </ul>
             </li>
 
-            <li class="treeview"><a href="#"> <i class="fa fa-cube"></i>
+            <li class="treeview"><a href="#"> <i class="fa fa-files-o"></i>
                 <span>k10</span> <span class="pull-right-container"> <i
                         class="fa fa-angle-left pull-right"></i>
 				</span>
@@ -89,7 +89,7 @@
             </li>
 
 
-            <li class="treeview"><a href="#"> <i class="fa fa-cube"></i>
+            <li class="treeview"><a href="#"> <i class="fa fa-th"></i>
                 <span>k20</span> <span class="pull-right-container"> <i
                         class="fa fa-angle-left pull-right"></i>
 				</span>
@@ -108,7 +108,7 @@
                 </ul>
             </li>
 
-            <li class="treeview"><a href="#"> <i class="fa fa-cube"></i>
+            <li class="treeview"><a href="#"> <i class="fa fa-pie-chart"></i>
                 <span>多唱.魔镜</span> <span class="pull-right-container"> <i
                         class="fa fa-angle-left pull-right"></i>
 				</span>
@@ -127,7 +127,7 @@
                 </ul>
             </li>
 
-            <li class="treeview"><a href="#"> <i class="fa fa-cube"></i>
+            <li class="treeview"><a href="#"> <i class="fa fa-laptop"></i>
                 <span>多唱PAD</span> <span class="pull-right-container"> <i
                         class="fa fa-angle-left pull-right"></i>
 				</span>
@@ -146,7 +146,7 @@
                 </ul>
             </li>
 
-            <li class="treeview"><a href="#"> <i class="fa fa-cube"></i>
+            <li class="treeview"><a href="#"> <i class="fa fa-edit"></i>
                 <span>多唱APP</span> <span class="pull-right-container"> <i
                         class="fa fa-angle-left pull-right"></i>
 				</span>
@@ -165,7 +165,7 @@
                 </ul>
             </li>
 
-            <li class="treeview"><a href="#"> <i class="fa fa-cube"></i>
+            <li class="treeview"><a href="#"> <i class="fa fa-table"></i>
                 <span>单机魔云</span> <span class="pull-right-container"> <i
                         class="fa fa-angle-left pull-right"></i>
 				</span>
@@ -184,7 +184,7 @@
                 </ul>
             </li>
 
-            <li class="treeview"><a href="#"> <i class="fa fa-cube"></i>
+            <li class="treeview"><a href="#"> <i class="fa fa-calendar"></i>
                 <span>微服</span> <span class="pull-right-container"> <i
                         class="fa fa-angle-left pull-right"></i>
 				</span>
@@ -203,7 +203,7 @@
                 </ul>
             </li>
 
-            <li class="treeview"><a href="#"> <i class="fa fa-cube"></i>
+            <li class="treeview"><a href="#"> <i class="fa fa-envelope"></i>
                 <span>官网管理</span> <span class="pull-right-container"> <i
                         class="fa fa-angle-left pull-right"></i>
 				</span>
@@ -222,7 +222,7 @@
                 </ul>
             </li>
 
-            <li class="treeview"><a href="#"> <i class="fa fa-cube"></i>
+            <li class="treeview"><a href="#"> <i class="fa fa-folder"></i>
                 <span>歌曲管理</span> <span class="pull-right-container"> <i
                         class="fa fa-angle-left pull-right"></i>
 				</span>
@@ -241,7 +241,7 @@
                 </ul>
             </li>
 
-            <li class="treeview"><a href="#"> <i class="fa fa-cube"></i>
+            <li class="treeview"><a href="#"> <i class="fa fa-share"></i>
                 <span>用户反馈</span> <span class="pull-right-container"> <i
                         class="fa fa-angle-left pull-right"></i>
 				</span>
@@ -260,7 +260,7 @@
                 </ul>
             </li>
 
-            <li class="treeview"><a href="#"> <i class="fa fa-cube"></i>
+            <li class="treeview"><a href="#"> <i class="fa fa-book"></i>
                 <span>预览设备管理</span> <span class="pull-right-container"> <i
                         class="fa fa-angle-left pull-right"></i>
 				</span>
