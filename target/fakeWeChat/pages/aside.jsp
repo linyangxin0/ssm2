@@ -1,5 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
          pageEncoding="UTF-8" %>
+<%@taglib prefix="security" uri="http://www.springframework.org/security/tags" %>
+
 
 
 <aside class="main-sidebar">
@@ -13,8 +15,7 @@
             </div>
             <div class="pull-left info">
                 <p>
-<%--                    <security:authentication property="principal.username"></security:authentication>--%>
-                    xxx
+                    <security:authentication property="principal.username"></security:authentication>
                 </p>
                 <a href="#"><i class="fa fa-circle text-success"></i> 在线</a>
             </div>
