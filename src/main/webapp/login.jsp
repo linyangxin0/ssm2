@@ -22,16 +22,16 @@
 
     <div class="loginbody">
         <div class="logindiv">
-            <form class="loginform">
+            <form class="loginform" action="${pageContext.request.contextPath}/login.do" method="post">
                 <ul>
                     <li>
-                        <input type="text" class="loginuser" id="user_name" name="user_name" placeholder="请输入用户名"/>
+                        <input type="text" class="loginuser" id="username" name="username" placeholder="请输入用户名"/>
                     </li>
                     <li>
                         <input type="password" class="loginpwd" id="password" name="password" placeholder="请输入密码"/>
                     </li>
                     <li>
-                        <input type="button" class="loginbtn" value="登录" id="loginbtn" onclick="check()"/>
+                        <input type="submit" class="loginbtn" value="登录" id="loginbtn"/>
                     </li>
                 </ul>
             </form>

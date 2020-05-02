@@ -1,6 +1,6 @@
 package cn.itbro.service.impl;
 
-import cn.itbro.dao.SongsDao;
+import cn.itbro.dao.ISongsDao;
 import cn.itbro.domain.Songs;
 import cn.itbro.service.SongsService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,35 +14,35 @@ import java.util.List;
 public class SongsServiceImpl implements SongsService {
 
     @Autowired
-    private SongsDao songsDao;
+    private ISongsDao ISongsDao;
 
     @Override
     public List<Songs> findAll() throws Exception {
-        return songsDao.findAll();
+        return ISongsDao.findAll();
     }
 
     @Override
     public void addSong(Songs song) {
-        songsDao.addSong(song);
+        ISongsDao.addSong(song);
     }
 
     @Override
     public List<Songs> findSongsByName(String searchText) {
 
-        return songsDao.findSongsByName(searchText);
+        return ISongsDao.findSongsByName(searchText);
     }
 
     @Override
     public void updateSongById(Songs song) {
-        songsDao.updateNameById(song);
-        songsDao.updateTitleById(song);
-        songsDao.updateUpdateTimeSongById(song);
-        songsDao.updateSortById(song);
-        songsDao.updateStatusById(song);
+        ISongsDao.updateNameById(song);
+        ISongsDao.updateTitleById(song);
+        ISongsDao.updateUpdateTimeSongById(song);
+        ISongsDao.updateSortById(song);
+        ISongsDao.updateStatusById(song);
     }
 
     @Override
     public void deleteSongById(String id) {
-        songsDao.deleteSongById(id);
+        ISongsDao.deleteSongById(id);
     }
 }
