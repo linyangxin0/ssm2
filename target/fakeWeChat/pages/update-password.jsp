@@ -124,16 +124,6 @@
 		</div>
 		<!-- 内容区域 /-->
 
-		<!-- 底部导航 -->
-		<footer class="main-footer">
-		<div class="pull-right hidden-xs">
-			<b>Version</b> 1.0.8
-		</div>
-		<strong>Copyright &copy; 2014-2017 <a
-			href="http://www.itcast.cn">研究院研发部</a>.
-		</strong> All rights reserved. </footer>
-		<!-- 底部导航 /-->
-
 	</div>
 
 
@@ -245,10 +235,23 @@
 
 		function updateFunction() {
 
+			let newPassword=$("#newPassword").val();
+			let repeatPassword=$("#repeatPassword").val();
+
+			if (newPassword==""||repeatPassword==""||newPassword==null||repeatPassword==null||repeatPassword!=newPassword)
+			{
+				alert("输入有误，请重新输入")
+				return;
+			}
 			$.post({
-				url:"user/updatePassword.do",
+				url:"/user/updatePassword.do",
+				data:{
+					"newPassword":$("#newPassword").val(),
+					"repeatPassword":$("#repeatPassword").val()
+				},
 				success:function () {
-					console.log("123")
+					alert("修改密码成功,请重新登录!")
+					location.href="/logout.do"
 				}
 			})
 		}

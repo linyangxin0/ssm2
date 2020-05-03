@@ -20,7 +20,6 @@ public class UserController {
 
     @RequestMapping("/updatePassword.do")
     public @ResponseBody void updatePassword(String newPassword,String repeatPassword){
-
 //        加密密码
         BCryptPasswordEncoderUtils bCryptPasswordEncoderUtils = new BCryptPasswordEncoderUtils();
         String newPwd  = bCryptPasswordEncoderUtils.encodePassword(newPassword);

@@ -80,10 +80,12 @@
     <div class="content-wrapper">
         <div class="top-bar">
             <div class="left-part">
-                <form action="/songs/search.do" method="get">
+                <form action="/songs/search.do" method="get" class="left-part-form">
                     <input type="text" placeholder="请输入搜索内容" class="left-input" name="search_text"/>
                     <button class="left-button" type="submit">搜索</button>
-                    <button class="left-button">全部歌单</button>
+                </form>
+                <form action="/songs/findAll.do" method="get" class="left-part-form">
+                    <button class="left-button" type="submit">全部歌单</button>
                 </form>
             </div>
             <div class="right-part">
@@ -128,16 +130,17 @@
                             </span>
                         </c:if>
                     </td>
+<%--                    href="/songs/deleteSong.do?id=${song.id}" --%>
                     <td class="flex-item">
                         <c:if test="${song.status==0}">
                             <a id="edit_btn" data-toggle="modal"
                                data-target="#editModal" onclick="value('${song.id}','${song.name}','${song.title}','${song.status}')" href="#">编辑</a>
-                            <a href="/songs/deleteSong.do?id=${song.id}">删除</a>
+                            <a onclick="deleteSong(${song.id})" href="#">删除</a>
                             <a href="#">预览</a>
                             <a href="#">歌曲信息</a>
                         </c:if>
                         <c:if test="${song.status==1}">
-                            <a href="/songs/deleteSong.do?id=${song.id}">下架</a>
+                            <a href="#" onclick="deleteSong(${song.id})">下架</a>
                             <a href="#">歌曲信息</a>
                         </c:if>
                     </td>
@@ -393,6 +396,26 @@
         // 激活导航位置
         setSidebarActive("admin-index");
     });
+
+    function findAll() {
+        console.log("123")
+        $.post({
+            url:"/songs/findAll.do",
+            success:function () {
+            }
+        })
+    }
+
+    function deleteSong(id) {
+        $.post({
+            url:"/songs/deleteSong.do",
+            data:{"id":id},
+            success:function () {
+                alert("删除(下架)成功");
+                location.href="/songs/findAll.do";
+            }
+        })
+    }
 </script>
 </body>
 

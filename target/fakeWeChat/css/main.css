@@ -50,3 +50,7 @@
     position: relative;
     top: 10px;
 }
+
+.left-part-form{
+    display: inline-block;
+}

@@ -7,8 +7,11 @@ import org.springframework.security.access.annotation.Secured;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
+import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
 import java.util.Date;
 import java.util.List;
 
@@ -50,7 +53,7 @@ public class SongsController {
         ModelAndView mv=new ModelAndView();
         List<Songs> songsList = songsService.findSongsByName(searchText);
         mv.addObject("songsList",songsList);
-        mv.setViewName("search-list-show");
+        mv.setViewName("songs-list");
         return mv;
     }
 
@@ -68,8 +71,6 @@ public class SongsController {
         song.setUpdateTime(new Date());
         song.setId(id);
 
-        System.out.println(song);
-
         songsService.updateSongById(song);
 
         return "redirect:findAll.do";
@@ -77,9 +78,8 @@ public class SongsController {
 
     @RequestMapping("/deleteSong.do")
     @Secured("ROLE_ADMIN")
-    public String deleteSong(@RequestParam(name = "id",required = true)String id){
+    public @ResponseBody void deleteSong(String id) throws IOException {
         songsService.deleteSongById(id);
-        return "redirect:findAll.do";
     }
 
 }
