@@ -52,4 +52,33 @@ public class UserServiceImpl implements IUserService {
     public void updatePassword(String username, String newPwd) {
         userDao.updatePassword(username,newPwd);
     }
+
+    @Override
+    public List<UserInfo> findAll() {
+        return userDao.findAll();
+    }
+
+    @Override
+    public UserInfo findById(String id) {
+        return userDao.findById(id);
+    }
+
+    @Override
+    public List<Role> findOtherRole(String userId) {
+        return userDao.findOtherRole(userId);
+    }
+
+    @Override
+    public void addRoleToUser(String userId, String[] roleIds) {
+        for(String roleId:roleIds){
+            userDao.addRoleToUser(userId,roleId);
+        }
+    }
+
+    @Override
+    public void save(UserInfo userInfo) throws Exception {
+        //对角色密码加密
+        userInfo.setPassword(bCryptPasswordEncoder.encode(userInfo.getPassword()));
+        userDao.save(userInfo);
+    }
 }

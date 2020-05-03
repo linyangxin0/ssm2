@@ -100,12 +100,12 @@
 
 						<div class="col-md-2 title">新密码</div>
 						<div class="col-md-4 data">
-							<input type="text" class="form-control" name="newPassword" id="newPassword"
+							<input type="password" class="form-control" name="newPassword" id="newPassword"
 								placeholder="请输入新密码" value="">
 						</div>
 						<div class="col-md-2 title">再次输入</div>
 						<div class="col-md-4 data">
-							<input type="text" class="form-control" name="repeatPassword" id="repeatPassword"
+							<input type="password" class="form-control" name="repeatPassword" id="repeatPassword"
 								placeholder="请再次输入新密码" value="">
 						</div>
 										

@@ -40,37 +40,35 @@
                                 class="fa fa-circle-o"></i> 歌单
                         </a>
                     </li>
-                    <li id="system-setting"><a
-                            href="${pageContext.request.contextPath}/role/findAll.do"> <i
-                            class="fa fa-circle-o"></i> 排行榜
-                    </a></li>
-                    <li id="system-setting"><a
-                            href="${pageContext.request.contextPath}/permission/findAll.do">
-                        <i class="fa fa-circle-o"></i> 榜单更新情况
-                    </a></li>
                 </ul>
             </li>
             <li class="treeview"><a href="#"> <i class="fa fa-dashboard"></i>
-                <span>应用管理</span> <span class="pull-right-container"> <i
+                <span>用户管理</span> <span class="pull-right-container"> <i
                         class="fa fa-angle-left pull-right"></i>
 				</span>
             </a>
                 <ul class="treeview-menu">
 
+                    <li id="system-setting">
+                            <a
+                                    href="${pageContext.request.contextPath}/user/findAll.do"> <i
+                                    class="fa fa-circle-o"></i> 用户管理
+                            </a>
+                    </li>
                     <li id="system-setting"><a
-                            href="${pageContext.request.contextPath}/product/findAll.do">
-                        <i class="fa fa-circle-o"></i> 产品管理
+                            href="${pageContext.request.contextPath}/role/findAll.do"> <i
+                            class="fa fa-circle-o"></i> 角色管理
                     </a></li>
                     <li id="system-setting"><a
-                            href="${pageContext.request.contextPath}/orders/findAll.do?page=1&size=4"> <i
-                            class="fa fa-circle-o"></i> 订单管理
+                            href="${pageContext.request.contextPath}/permission/findAll.do">
+                        <i class="fa fa-circle-o"></i> 资源权限管理
                     </a></li>
 
                 </ul>
             </li>
 
             <li class="treeview"><a href="#"> <i class="fa fa-files-o"></i>
-                <span>k10</span> <span class="pull-right-container"> <i
+                <span>设备管理</span> <span class="pull-right-container"> <i
                         class="fa fa-angle-left pull-right"></i>
 				</span>
             </a>
