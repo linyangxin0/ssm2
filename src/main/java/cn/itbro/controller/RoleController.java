@@ -4,6 +4,7 @@ import cn.itbro.domain.Permission;
 import cn.itbro.domain.Role;
 import cn.itbro.service.IRoleService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.access.annotation.Secured;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -37,12 +38,14 @@ public class RoleController {
     }
 
     @RequestMapping("/deleteRole.do")
+    @Secured("ROLE_ADMIN")
     public String deleteRole(@RequestParam(name = "id",required = true) String roleId) throws Exception{
         roleService.deleteRole(roleId);
         return "redirect:findAll.do";
     }
 
     @RequestMapping("/save.do")
+    @Secured("ROLE_ADMIN")
     public String save(Role role) throws Exception{
         roleService.save(role);
         return "redirect:findAll.do";
@@ -62,6 +65,7 @@ public class RoleController {
     }
 
     @RequestMapping("/addPermissionToRole")
+    @Secured("ROLE_ADMIN")
     public String addPermissionToRole(@RequestParam(name = "roleId", required = true) String roleId, @RequestParam(name = "ids", required = true) String[] permissionIds) throws Exception {
         roleService.addPermissionToRole(roleId, permissionIds);
         return "redirect:findAll.do";

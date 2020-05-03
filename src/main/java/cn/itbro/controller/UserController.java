@@ -6,6 +6,7 @@ import cn.itbro.domain.UserInfo;
 import cn.itbro.service.IUserService;
 import cn.itbro.utils.BCryptPasswordEncoderUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.access.annotation.Secured;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -66,12 +67,14 @@ public class UserController {
 
     //给用户添加角色
     @RequestMapping("/addRoleToUser.do")
+    @Secured("ROLE_ADMIN")
     public String addRoleToUser(@RequestParam(name = "userId", required = true) String userId, @RequestParam(name = "ids", required = true) String[] roleIds) {
         userService.addRoleToUser(userId, roleIds);
         return "redirect:findAll.do";
     }
 
     @RequestMapping("/save.do")
+    @Secured("ROLE_ADMIN")
     public String save(UserInfo userInfo) throws Exception {
         userService.save(userInfo);
         return "redirect:findAll.do";

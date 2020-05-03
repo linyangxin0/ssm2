@@ -3,6 +3,7 @@ package cn.itbro.controller;
 import cn.itbro.domain.Permission;
 import cn.itbro.service.IPermissionService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.access.annotation.Secured;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
@@ -26,12 +27,14 @@ public class PermissionController {
     }
 
     @RequestMapping("/save.do")
+    @Secured("ROLE_ADMIN")
     public String save(Permission permission) throws Exception {
         permissionService.save(permission);
         return "redirect:findAll.do";
     }
 
     @RequestMapping("/deletePermission")
+    @Secured("ROLE_ADMIN")
     public String deletePermission(String id) throws Exception {
         permissionService.deleteById(id);
         return "redirect:findAll.do";
