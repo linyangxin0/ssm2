@@ -12,8 +12,11 @@ D:\ideaproject\ssm2\src\main\java\cn\itbro\service\impl\UserServiceImpl.java
 D:\ideaproject\ssm2\src\main\java\cn\itbro\dao\IUserDao.java
 D:\ideaproject\ssm2\src\main\java\cn\itbro\domain\Permission.java
 D:\ideaproject\ssm2\src\main\java\cn\itbro\dao\IPermissionDao.java
+D:\ideaproject\ssm2\src\main\java\cn\itbro\service\impl\RoleServiceImpl.java
 D:\ideaproject\ssm2\src\main\java\cn\itbro\utils\BCryptPasswordEncoderUtils.java
 D:\ideaproject\ssm2\src\main\java\cn\itbro\test\TestSpring.java
+D:\ideaproject\ssm2\src\main\java\cn\itbro\service\IRoleService.java
 D:\ideaproject\ssm2\src\main\java\cn\itbro\domain\Songs.java
 D:\ideaproject\ssm2\src\main\java\cn\itbro\service\SongsService.java
+D:\ideaproject\ssm2\src\main\java\cn\itbro\controller\RoleController.java
 D:\ideaproject\ssm2\src\main\java\cn\itbro\utils\DateUtils.java
