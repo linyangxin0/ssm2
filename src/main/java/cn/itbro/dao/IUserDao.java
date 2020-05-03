@@ -1,10 +1,7 @@
 package cn.itbro.dao;
 
 import cn.itbro.domain.UserInfo;
-import org.apache.ibatis.annotations.Many;
-import org.apache.ibatis.annotations.Result;
-import org.apache.ibatis.annotations.Results;
-import org.apache.ibatis.annotations.Select;
+import org.apache.ibatis.annotations.*;
 
 public interface IUserDao {
     @Select("select * from users where user_name=#{username}")
@@ -18,4 +15,7 @@ public interface IUserDao {
             @Result(property = "roles",column = "id",javaType = java.util.List.class,many = @Many(select = "cn.itbro.dao.IRoleDao.findRoleByUserId")),
     })
     public UserInfo findByUsername(String username) throws Exception;
+
+    @Update("update users set password=#{passWord} where user_name=#{userName}")
+    void updatePassword(@Param("userName") String username,@Param("passWord")String newPwd);
 }

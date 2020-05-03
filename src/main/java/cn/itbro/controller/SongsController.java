@@ -20,7 +20,6 @@ public class SongsController {
     private SongsService songsService;
 
     @RequestMapping("/findAll.do")
-    @Secured("ROLE_ADMIN")
     public ModelAndView findAll() throws Exception {
         ModelAndView mv=new ModelAndView();
         List<Songs> songsList = songsService.findAll();
@@ -30,6 +29,7 @@ public class SongsController {
     }
 
     @RequestMapping("/addSong.do")
+    @Secured("ROLE_ADMIN")
     public String addSong(@RequestParam(name = "name",required = true)String name,
                           @RequestParam(name = "title",required = true)String title,
                           @RequestParam(name = "status",required = true)int status){
@@ -55,6 +55,7 @@ public class SongsController {
     }
 
     @RequestMapping("/editSong.do")
+    @Secured("ROLE_ADMIN")
     public String editSong(@RequestParam(name = "name",required = true)String name,
                            @RequestParam(name = "title",required = true)String title,
                            @RequestParam(name = "status",required = true)int status,
@@ -75,6 +76,7 @@ public class SongsController {
     }
 
     @RequestMapping("/deleteSong.do")
+    @Secured("ROLE_ADMIN")
     public String deleteSong(@RequestParam(name = "id",required = true)String id){
         songsService.deleteSongById(id);
         return "redirect:findAll.do";

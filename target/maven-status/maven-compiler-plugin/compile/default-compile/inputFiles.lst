@@ -5,7 +5,7 @@ D:\ideaproject\ssm2\src\main\java\cn\itbro\domain\UserInfo.java
 D:\ideaproject\ssm2\src\main\java\cn\itbro\domain\Role.java
 D:\ideaproject\ssm2\src\main\java\cn\itbro\test\TestMyBatis.java
 D:\ideaproject\ssm2\src\main\java\cn\itbro\utils\DateStringEditor.java
-D:\ideaproject\ssm2\src\main\java\cn\itbro\dao\SongsDao.java
+D:\ideaproject\ssm2\src\main\java\cn\itbro\controller\UserController.java
 D:\ideaproject\ssm2\src\main\java\cn\itbro\dao\ISongsDao.java
 D:\ideaproject\ssm2\src\main\java\cn\itbro\controller\SongsController.java
 D:\ideaproject\ssm2\src\main\java\cn\itbro\service\impl\UserServiceImpl.java

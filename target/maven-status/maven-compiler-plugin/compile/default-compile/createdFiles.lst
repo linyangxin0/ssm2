@@ -1,5 +1,4 @@
 cn\itbro\controller\SongsController.class
-cn\itbro\dao\SongsDao.class
 cn\itbro\service\impl\UserServiceImpl.class
 cn\itbro\dao\IPermissionDao.class
 cn\itbro\dao\IRoleDao.class
@@ -11,6 +10,7 @@ cn\itbro\service\IUserService.class
 cn\itbro\service\SongsService.class
 cn\itbro\utils\DateStringEditor.class
 cn\itbro\domain\UserInfo.class
+cn\itbro\controller\UserController.class
 cn\itbro\dao\IUserDao.class
 cn\itbro\domain\Permission.class
 cn\itbro\domain\Songs.class

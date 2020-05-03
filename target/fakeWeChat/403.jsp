@@ -9,8 +9,26 @@
 <html>
 <head>
     <title>权限</title>
+    <style>
+        .content{
+            width: 100%;
+            height: 100%;
+            position: relative;
+        }
+
+        .content-item{
+            position: absolute;
+            left: 42%;
+            top: 42%;
+        }
+    </style>
 </head>
 <body>
-    <h1>权限不足</h1>
+    <div class="content">
+        <div class="content-item">
+            <h1>权限不足</h1>
+            <a href="javascript:history.back(-1)">返回</a>
+        </div>
+    </div>
 </body>
 </html>
