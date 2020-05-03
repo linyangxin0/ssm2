@@ -1,12 +1,17 @@
 cn\itbro\controller\SongsController.class
+cn\itbro\domain\SysLog.class
+cn\itbro\controller\SysController.class
 cn\itbro\dao\IPermissionDao.class
 cn\itbro\utils\BCryptPasswordEncoderUtils.class
 cn\itbro\domain\Role.class
 cn\itbro\service\IUserService.class
+cn\itbro\service\impl\SysLogServiceImpl.class
 cn\itbro\controller\RoleController.class
+cn\itbro\dao\ISysLogDao.class
 cn\itbro\service\SongsService.class
 cn\itbro\utils\DateStringEditor.class
 cn\itbro\service\IPermissionService.class
+cn\itbro\controller\LogAop.class
 cn\itbro\controller\UserController.class
 cn\itbro\controller\PermissionController.class
 cn\itbro\domain\Permission.class
@@ -20,4 +25,5 @@ cn\itbro\dao\ISongsDao.class
 cn\itbro\service\impl\SongsServiceImpl.class
 cn\itbro\domain\UserInfo.class
 cn\itbro\dao\IUserDao.class
+cn\itbro\service\ISysLogService.class
 cn\itbro\service\IRoleService.class
