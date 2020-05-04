@@ -78,12 +78,12 @@
                 <ul class="treeview-menu">
 
                     <li id="system-setting"><a
-                            href="${pageContext.request.contextPath}/product/findAll.do">
-                        <i class="fa fa-circle-o"></i> 产品管理
+                            href="${pageContext.request.contextPath}/deviceType/findAll.do">
+                        <i class="fa fa-circle-o"></i> 设备类型
                     </a></li>
                     <li id="system-setting"><a
                             href="${pageContext.request.contextPath}/orders/findAll.do?page=1&size=4"> <i
-                            class="fa fa-circle-o"></i> 订单管理
+                            class="fa fa-circle-o"></i> 设备详情
                     </a></li>
 
                 </ul>
@@ -91,178 +91,7 @@
 
 
             <li class="treeview"><a href="#"> <i class="fa fa-th"></i>
-                <span>k20</span> <span class="pull-right-container"> <i
-                        class="fa fa-angle-left pull-right"></i>
-				</span>
-            </a>
-                <ul class="treeview-menu">
-
-                    <li id="system-setting"><a
-                            href="${pageContext.request.contextPath}/product/findAll.do">
-                        <i class="fa fa-circle-o"></i> 产品管理
-                    </a></li>
-                    <li id="system-setting"><a
-                            href="${pageContext.request.contextPath}/orders/findAll.do?page=1&size=4"> <i
-                            class="fa fa-circle-o"></i> 订单管理
-                    </a></li>
-
-                </ul>
-            </li>
-
-            <li class="treeview"><a href="#"> <i class="fa fa-pie-chart"></i>
-                <span>多唱.魔镜</span> <span class="pull-right-container"> <i
-                        class="fa fa-angle-left pull-right"></i>
-				</span>
-            </a>
-                <ul class="treeview-menu">
-
-                    <li id="system-setting"><a
-                            href="${pageContext.request.contextPath}/product/findAll.do">
-                        <i class="fa fa-circle-o"></i> 产品管理
-                    </a></li>
-                    <li id="system-setting"><a
-                            href="${pageContext.request.contextPath}/orders/findAll.do?page=1&size=4"> <i
-                            class="fa fa-circle-o"></i> 订单管理
-                    </a></li>
-
-                </ul>
-            </li>
-
-            <li class="treeview"><a href="#"> <i class="fa fa-laptop"></i>
-                <span>多唱PAD</span> <span class="pull-right-container"> <i
-                        class="fa fa-angle-left pull-right"></i>
-				</span>
-            </a>
-                <ul class="treeview-menu">
-
-                    <li id="system-setting"><a
-                            href="${pageContext.request.contextPath}/product/findAll.do">
-                        <i class="fa fa-circle-o"></i> 产品管理
-                    </a></li>
-                    <li id="system-setting"><a
-                            href="${pageContext.request.contextPath}/orders/findAll.do?page=1&size=4"> <i
-                            class="fa fa-circle-o"></i> 订单管理
-                    </a></li>
-
-                </ul>
-            </li>
-
-            <li class="treeview"><a href="#"> <i class="fa fa-edit"></i>
-                <span>多唱APP</span> <span class="pull-right-container"> <i
-                        class="fa fa-angle-left pull-right"></i>
-				</span>
-            </a>
-                <ul class="treeview-menu">
-
-                    <li id="system-setting"><a
-                            href="${pageContext.request.contextPath}/product/findAll.do">
-                        <i class="fa fa-circle-o"></i> 产品管理
-                    </a></li>
-                    <li id="system-setting"><a
-                            href="${pageContext.request.contextPath}/orders/findAll.do?page=1&size=4"> <i
-                            class="fa fa-circle-o"></i> 订单管理
-                    </a></li>
-
-                </ul>
-            </li>
-
-            <li class="treeview"><a href="#"> <i class="fa fa-table"></i>
-                <span>单机魔云</span> <span class="pull-right-container"> <i
-                        class="fa fa-angle-left pull-right"></i>
-				</span>
-            </a>
-                <ul class="treeview-menu">
-
-                    <li id="system-setting"><a
-                            href="${pageContext.request.contextPath}/product/findAll.do">
-                        <i class="fa fa-circle-o"></i> 产品管理
-                    </a></li>
-                    <li id="system-setting"><a
-                            href="${pageContext.request.contextPath}/orders/findAll.do?page=1&size=4"> <i
-                            class="fa fa-circle-o"></i> 订单管理
-                    </a></li>
-
-                </ul>
-            </li>
-
-            <li class="treeview"><a href="#"> <i class="fa fa-calendar"></i>
-                <span>微服</span> <span class="pull-right-container"> <i
-                        class="fa fa-angle-left pull-right"></i>
-				</span>
-            </a>
-                <ul class="treeview-menu">
-
-                    <li id="system-setting"><a
-                            href="${pageContext.request.contextPath}/product/findAll.do">
-                        <i class="fa fa-circle-o"></i> 产品管理
-                    </a></li>
-                    <li id="system-setting"><a
-                            href="${pageContext.request.contextPath}/orders/findAll.do?page=1&size=4"> <i
-                            class="fa fa-circle-o"></i> 订单管理
-                    </a></li>
-
-                </ul>
-            </li>
-
-            <li class="treeview"><a href="#"> <i class="fa fa-envelope"></i>
-                <span>官网管理</span> <span class="pull-right-container"> <i
-                        class="fa fa-angle-left pull-right"></i>
-				</span>
-            </a>
-                <ul class="treeview-menu">
-
-                    <li id="system-setting"><a
-                            href="${pageContext.request.contextPath}/product/findAll.do">
-                        <i class="fa fa-circle-o"></i> 产品管理
-                    </a></li>
-                    <li id="system-setting"><a
-                            href="${pageContext.request.contextPath}/orders/findAll.do?page=1&size=4"> <i
-                            class="fa fa-circle-o"></i> 订单管理
-                    </a></li>
-
-                </ul>
-            </li>
-
-            <li class="treeview"><a href="#"> <i class="fa fa-folder"></i>
-                <span>歌曲管理</span> <span class="pull-right-container"> <i
-                        class="fa fa-angle-left pull-right"></i>
-				</span>
-            </a>
-                <ul class="treeview-menu">
-
-                    <li id="system-setting"><a
-                            href="${pageContext.request.contextPath}/product/findAll.do">
-                        <i class="fa fa-circle-o"></i> 产品管理
-                    </a></li>
-                    <li id="system-setting"><a
-                            href="${pageContext.request.contextPath}/orders/findAll.do?page=1&size=4"> <i
-                            class="fa fa-circle-o"></i> 订单管理
-                    </a></li>
-
-                </ul>
-            </li>
-
-            <li class="treeview"><a href="#"> <i class="fa fa-share"></i>
-                <span>用户反馈</span> <span class="pull-right-container"> <i
-                        class="fa fa-angle-left pull-right"></i>
-				</span>
-            </a>
-                <ul class="treeview-menu">
-
-                    <li id="system-setting"><a
-                            href="${pageContext.request.contextPath}/product/findAll.do">
-                        <i class="fa fa-circle-o"></i> 产品管理
-                    </a></li>
-                    <li id="system-setting"><a
-                            href="${pageContext.request.contextPath}/orders/findAll.do?page=1&size=4"> <i
-                            class="fa fa-circle-o"></i> 订单管理
-                    </a></li>
-
-                </ul>
-            </li>
-
-            <li class="treeview"><a href="#"> <i class="fa fa-book"></i>
-                <span>预览设备管理</span> <span class="pull-right-container"> <i
+                <span>音乐管理</span> <span class="pull-right-container"> <i
                         class="fa fa-angle-left pull-right"></i>
 				</span>
             </a>
