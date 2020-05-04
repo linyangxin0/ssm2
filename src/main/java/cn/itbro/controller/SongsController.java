@@ -64,15 +64,19 @@ public class SongsController {
     @Secured("ROLE_ADMIN")
     public String editSong(@RequestParam(name = "name",required = true)String name,
                            @RequestParam(name = "title",required = true)String title,
-                           @RequestParam(name = "status",required = true)int status,
-                           @RequestParam(name = "id",required = true)int id){
+                           @RequestParam(name = "status",required = true)String status,
+                           @RequestParam(name = "id",required = true)String id){
+
+        int cStatus = Integer.parseInt(status);
+        int cId=Integer.parseInt(id);
+
         Songs song = new Songs();
         song.setName(name);
         song.setTitle(title);
-        song.setStatus(status);
+        song.setStatus(cStatus);
         song.setSort(0);
         song.setUpdateTime(new Date());
-        song.setId(id);
+        song.setId(cId);
 
         songsService.updateSongById(song);
 
