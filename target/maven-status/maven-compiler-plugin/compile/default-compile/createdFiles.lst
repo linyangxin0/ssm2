@@ -12,6 +12,7 @@ cn\itbro\service\impl\SysLogServiceImpl.class
 cn\itbro\controller\RoleController.class
 cn\itbro\dao\ISysLogDao.class
 cn\itbro\service\SongsService.class
+cn\itbro\service\IDeviceDetailService.class
 cn\itbro\utils\DateStringEditor.class
 cn\itbro\service\IPermissionService.class
 cn\itbro\controller\LogAop.class
@@ -21,6 +22,7 @@ cn\itbro\domain\Permission.class
 cn\itbro\domain\Songs.class
 cn\itbro\utils\DateUtils.class
 cn\itbro\domain\DeviceType.class
+cn\itbro\service\impl\DeviceDetailServiceImpl.class
 cn\itbro\service\impl\UserServiceImpl.class
 cn\itbro\service\impl\RoleServiceImpl.class
 cn\itbro\dao\IRoleDao.class
@@ -33,4 +35,5 @@ cn\itbro\dao\IDeviceDetailDao.class
 cn\itbro\domain\UserInfo.class
 cn\itbro\dao\IUserDao.class
 cn\itbro\service\ISysLogService.class
+cn\itbro\controller\DeviceDetailController.class
 cn\itbro\service\IRoleService.class

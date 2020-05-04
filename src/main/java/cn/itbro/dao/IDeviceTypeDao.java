@@ -27,4 +27,7 @@ public interface IDeviceTypeDao {
 
     @Delete("delete from device_details where device_type_id=#{id}")
     void deleteDeviceDetailsByDetailTypeId(String id);
+
+    @Select("select * from device_type where id=#{id}")
+    public DeviceType findById(String id);
 }

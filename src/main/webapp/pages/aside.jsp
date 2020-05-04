@@ -82,7 +82,7 @@
                         <i class="fa fa-circle-o"></i> 设备类型
                     </a></li>
                     <li id="system-setting"><a
-                            href="${pageContext.request.contextPath}/orders/findAll.do?page=1&size=4"> <i
+                            href="${pageContext.request.contextPath}/deviceDetail/findAll.do"> <i
                             class="fa fa-circle-o"></i> 设备详情
                     </a></li>
 
