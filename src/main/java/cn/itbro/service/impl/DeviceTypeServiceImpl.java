@@ -25,4 +25,15 @@ public class DeviceTypeServiceImpl implements IDeviceTypeService {
     public DeviceType findDeviceDetailsByDeviceTypeId(String id) {
         return deviceTypeDao.findDeviceDetailsByDeviceTypeId(id);
     }
+
+    @Override
+    public void save(String deviceType) {
+        deviceTypeDao.save(deviceType);
+    }
+
+    @Override
+    public void deleteDeviceType(String id) {
+        deviceTypeDao.deleteDeviceType(id);
+        deviceTypeDao.deleteDeviceDetailsByDetailTypeId(id);
+    }
 }

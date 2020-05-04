@@ -8,4 +8,8 @@ public interface IDeviceTypeService {
     List<DeviceType> findAll();
 
     DeviceType findDeviceDetailsByDeviceTypeId(String id);
+
+    void save(String deviceType);
+
+    void deleteDeviceType(String id);
 }

@@ -1,10 +1,7 @@
 package cn.itbro.dao;
 
 import cn.itbro.domain.DeviceType;
-import org.apache.ibatis.annotations.Many;
-import org.apache.ibatis.annotations.Result;
-import org.apache.ibatis.annotations.Results;
-import org.apache.ibatis.annotations.Select;
+import org.apache.ibatis.annotations.*;
 
 
 import java.util.List;
@@ -21,4 +18,13 @@ public interface IDeviceTypeDao {
             @Result(property = "devices",column = "id",javaType = java.util.List.class,many = @Many(select = "cn.itbro.dao.IDeviceDetailDao.findDeviceDetailsByDeviceTypeId")),
     })
     DeviceType findDeviceDetailsByDeviceTypeId(String id);
+
+    @Insert("insert into device_type (device_type) values (#{deviceType})")
+    void save(String deviceType);
+
+    @Delete("delete from device_type where id=#{id}")
+    void deleteDeviceType(String id);
+
+    @Delete("delete from device_details where device_type_id=#{id}")
+    void deleteDeviceDetailsByDetailTypeId(String id);
 }

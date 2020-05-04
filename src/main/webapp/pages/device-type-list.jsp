@@ -150,7 +150,7 @@
 
 											<td class="text-center">
 												<a href="${pageContext.request.contextPath}/deviceType/findDeviceDetailsByDeviceTypeId.do?id=${deviceType.id}" class="btn bg-olive btn-xs">设备详情</a>
-												<a href="${pageContext.request.contextPath}/user/findUserByIdAndAllRole.do?id=${user.id}" class="btn bg-olive btn-xs">添加设备</a>
+												<a href="${pageContext.request.contextPath}/deviceType/deleteDeviceType.do?id=${deviceType.id}" class="btn bg-olive btn-xs">删除该设备类型</a>
 											</td>
 										</tr>
 									</c:forEach>

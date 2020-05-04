@@ -43,4 +43,16 @@ public class DeviceTypeController {
 
     }
 
+    @RequestMapping("/save.do")
+    public String save(@RequestParam(name = "deviceType", required = true) String deviceType){
+        deviceTypeService.save(deviceType);
+        return "redirect:findAll.do";
+    }
+
+    @RequestMapping("/deleteDeviceType.do")
+    public String deleteDeviceType(@RequestParam(name = "id", required = true) String id){
+        deviceTypeService.deleteDeviceType(id);
+        return "redirect:findAll.do";
+    }
+
 }
