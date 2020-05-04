@@ -3,7 +3,6 @@
 <%@taglib prefix="security" uri="http://www.springframework.org/security/tags" %>
 
 
-
 <aside class="main-sidebar">
     <!-- sidebar: style can be found in sidebar.less -->
     <section class="sidebar">
@@ -22,26 +21,11 @@
         </div>
 
         <ul class="sidebar-menu">
-            <%--            <li id="admin-index"><a--%>
-            <%--                    href="${pageContext.request.contextPath}/pages/songs-list.jsp"><i--%>
-            <%--                    class="fa fa-dashboard"></i> <span>首页</span></a></li>--%>
-
-            <li class="treeview"><a href="#"> <i class="fa fa-cube"></i>
-                <span>榜单管理</span> <span class="pull-right-container"> <i
-                        class="fa fa-angle-left pull-right"></i>
-				</span>
-
-
-            </a>
-                <ul class="treeview-menu">
-                    <li id="system-setting">
-                        <a
-                                href="${pageContext.request.contextPath}/songs/findAll.do"> <i
-                                class="fa fa-circle-o"></i> 歌单
-                        </a>
-                    </li>
-                </ul>
+            <li id="admin-index"><a
+                    href="${pageContext.request.contextPath}/pages/main.jsp"><i
+                    class="fa fa-dashboard"></i> <span>首页</span></a>
             </li>
+
             <li class="treeview"><a href="#"> <i class="fa fa-dashboard"></i>
                 <span>用户管理</span> <span class="pull-right-container"> <i
                         class="fa fa-angle-left pull-right"></i>
@@ -50,10 +34,10 @@
                 <ul class="treeview-menu">
 
                     <li id="system-setting">
-                            <a
-                                    href="${pageContext.request.contextPath}/user/findAll.do"> <i
-                                    class="fa fa-circle-o"></i> 用户管理
-                            </a>
+                        <a
+                                href="${pageContext.request.contextPath}/user/findAll.do"> <i
+                                class="fa fa-circle-o"></i> 用户管理
+                        </a>
                     </li>
                     <li id="system-setting"><a
                             href="${pageContext.request.contextPath}/role/findAll.do"> <i
@@ -96,14 +80,15 @@
 				</span>
             </a>
                 <ul class="treeview-menu">
-
+                    <li id="system-setting">
+                        <a
+                                href="${pageContext.request.contextPath}/songs/findAll.do"> <i
+                                class="fa fa-circle-o"></i> 歌单
+                        </a>
+                    </li>
                     <li id="system-setting"><a
                             href="${pageContext.request.contextPath}/equipmentMusic/findAll.do">
                         <i class="fa fa-circle-o"></i> 设备音乐管理
-                    </a></li>
-                    <li id="system-setting"><a
-                            href="${pageContext.request.contextPath}/orders/findAll.do?page=1&size=4"> <i
-                            class="fa fa-circle-o"></i> 订单管理
                     </a></li>
 
                 </ul>
