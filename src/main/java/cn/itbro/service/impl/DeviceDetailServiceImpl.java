@@ -20,4 +20,19 @@ public class DeviceDetailServiceImpl implements IDeviceDetailService {
     public List<DeviceDetails> findAll() {
         return deviceDetailDao.findAll();
     }
+
+    @Override
+    public void deleteDeviceType(String id) {
+        deviceDetailDao.deleteDeviceType(id);
+    }
+
+    @Override
+    public void save(DeviceDetails deviceDetail) {
+        deviceDetailDao.save(deviceDetail);
+    }
+
+    @Override
+    public void editDetail(DeviceDetails deviceDetails) {
+        deviceDetailDao.editDetail(deviceDetails);
+    }
 }

@@ -10,8 +10,10 @@ D:\ideaproject\ssm2\src\main\java\cn\itbro\dao\IDeviceTypeDao.java
 D:\ideaproject\ssm2\src\main\java\cn\itbro\service\ISysLogService.java
 D:\ideaproject\ssm2\src\main\java\cn\itbro\dao\ISongsDao.java
 D:\ideaproject\ssm2\src\main\java\cn\itbro\controller\SongsController.java
+D:\ideaproject\ssm2\src\main\java\cn\itbro\service\IDeviceDetailService.java
 D:\ideaproject\ssm2\src\main\java\cn\itbro\service\impl\SysLogServiceImpl.java
 D:\ideaproject\ssm2\src\main\java\cn\itbro\domain\Permission.java
+D:\ideaproject\ssm2\src\main\java\cn\itbro\service\impl\DeviceDetailServiceImpl.java
 D:\ideaproject\ssm2\src\main\java\cn\itbro\dao\IPermissionDao.java
 D:\ideaproject\ssm2\src\main\java\cn\itbro\service\IPermissionService.java
 D:\ideaproject\ssm2\src\main\java\cn\itbro\domain\Songs.java
@@ -33,6 +35,7 @@ D:\ideaproject\ssm2\src\main\java\cn\itbro\service\impl\RoleServiceImpl.java
 D:\ideaproject\ssm2\src\main\java\cn\itbro\utils\BCryptPasswordEncoderUtils.java
 D:\ideaproject\ssm2\src\main\java\cn\itbro\test\TestSpring.java
 D:\ideaproject\ssm2\src\main\java\cn\itbro\service\IRoleService.java
+D:\ideaproject\ssm2\src\main\java\cn\itbro\controller\DeviceDetailController.java
 D:\ideaproject\ssm2\src\main\java\cn\itbro\service\SongsService.java
 D:\ideaproject\ssm2\src\main\java\cn\itbro\controller\RoleController.java
 D:\ideaproject\ssm2\src\main\java\cn\itbro\domain\SysLog.java

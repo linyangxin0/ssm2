@@ -105,13 +105,16 @@
 						<div class="table-box">
 
 							<!--工具栏-->
+<%--							 location.href='${pageContext.request.contextPath}/pages/device-detail-add.jsp'--%>
 							<div class="pull-left">
 								<div class="form-group form-inline">
 									<div class="btn-group">
-										<button type="button" class="btn btn-default" title="新建" onclick="location.href='${pageContext.request.contextPath}/pages/device-detail-add.jsp'">
-											<i class="fa fa-file-o"></i> 新建
-										</button>
-										
+										<form action="/deviceDetail/findAllDeviceType.do" style="display: inline-block">
+											<button type="submit" class="btn btn-default" title="新建">
+												<i class="fa fa-file-o"></i> 新建
+											</button>
+										</form>
+
 										<button type="button" class="btn btn-default" title="刷新">
 											<i class="fa fa-refresh"></i> 刷新
 										</button>
@@ -153,8 +156,9 @@
 											<td>${deviceDetails.onlineStr }</td>
 
 											<td class="text-center">
-												<a href="${pageContext.request.contextPath}/deviceType/findDeviceDetailsByDeviceTypeId.do?id=${deviceType.id}" class="btn bg-olive btn-xs">设备详情</a>
-												<a href="${pageContext.request.contextPath}/deviceType/deleteDeviceType.do?id=${deviceType.id}" class="btn bg-olive btn-xs">删除该设备类型</a>
+												<a href="${pageContext.request.contextPath}/deviceDetail/deleteDeviceDetail.do?id=${deviceDetails.id}" class="btn bg-olive btn-xs">删除该设备</a>
+												<a href="#" data-toggle="modal" data-target="#editModal" class="btn bg-olive btn-xs"
+												   onclick="deviceDetailValue('${deviceDetails.id}','${deviceDetails.deviceTypeId}','${deviceDetails.deviceType.deviceType}','${deviceDetails.name}','${deviceDetails.online}')">编辑设备</a>
 											</td>
 										</tr>
 									</c:forEach>
@@ -177,6 +181,72 @@
 
 					</div>
 					<!-- /.box-body -->
+
+
+					<%--编辑按键模态框--%>
+					<div class="modal fade" id="editModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+						 aria-hidden="true">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h4 class="modal-title" id="myModalLabel2">
+										编辑设备信息
+									</h4>
+								</div>
+								<form action="/deviceDetail/editDetail.do">
+									<div class="modal-body">
+
+										<input id="edit_id" type="hidden" name="id">
+<%--										<input id="edit_type_id" type="hidden" name="id">--%>
+
+										<div class="row">
+											<label for="edit_name" class="col-sm-4 control-label">
+												设备名称:
+											</label>
+											<div class="col-sm-8">
+												<input type="text" class="form-control" id="edit_name" name="name"
+													   placeholder="请输入设备名称"/>
+											</div>
+										</div>
+
+										<div class="row">
+											<label class="col-sm-4 control-label">
+												设备种类:
+											</label>
+											<div class="col-sm-8">
+												<select class="form-control" name="typeId" id="edit_type_id">
+													<c:forEach items="${deviceTypes}" var="deviceType">
+														<option value="${deviceType.id}">${deviceType.deviceType}</option>
+													</c:forEach>
+												</select>
+											</div>
+										</div>
+
+										<div class="row">
+											<label class="col-sm-4 control-label">
+												状态:
+											</label>
+											<div class="col-sm-8">
+												<select id="edit_online" class="form-control" name="online">
+													<option value="0">不在线</option>
+													<option value="1">在线</option>
+												</select>
+											</div>
+										</div>
+									</div>
+									<div class="modal-footer">
+										<button type="submit" class="btn btn-primary" id="edit_song_btn">
+											修改
+										</button>
+										<button type="button" class="btn btn-default"
+												data-dismiss="modal">
+											关闭
+										</button>
+									</div>
+								</form>
+							</div><!-- /.modal-content -->
+						</div><!-- /.modal-dialog -->
+					</div><!-- /.modal -->
 
 					<!-- .box-footer-->
 					<div class="box-footer">
@@ -218,15 +288,7 @@
 			<!-- @@close -->
 			<!-- 内容区域 /-->
 
-			<!-- 底部导航 -->
-			<footer class="main-footer">
-			<div class="pull-right hidden-xs">
-				<b>Version</b> 1.0.8
-			</div>
-			<strong>Copyright &copy; 2014-2017 <a
-				href="http://www.itcast.cn">研究院研发部</a>.
-			</strong> All rights reserved. </footer>
-			<!-- 底部导航 /-->
+
 
 		</div>
 
@@ -279,6 +341,15 @@
 		<script src="../plugins/ionslider/ion.rangeSlider.min.js"></script>
 		<script src="../plugins/bootstrap-slider/bootstrap-slider.js"></script>
 		<script>
+
+			function deviceDetailValue(id,deviceTypeId,deviceType,name,online){
+				$("#edit_type_id").val(deviceTypeId);
+				$("#edit_id").val(id);
+				// $("#edit_device_type").val(deviceType);
+				$("#edit_name").val(name);
+				$("#edit_online").val(online);
+			}
+
 			$(document).ready(function() {
 				// 选择框
 				$(".select2").select2();

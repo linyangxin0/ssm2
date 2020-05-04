@@ -398,7 +398,6 @@
     });
 
     function findAll() {
-        console.log("123")
         $.post({
             url:"/songs/findAll.do",
             success:function () {

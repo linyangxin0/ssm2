@@ -1,5 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -79,7 +81,7 @@
 			<!-- 内容头部 -->
 			<section class="content-header">
 			<h1>
-				设备管理 <small>添加设备类型</small>
+				用户管理 <small>用户表单</small>
 			</h1>
 			<ol class="breadcrumb">
 				<li><a href="${pageContext.request.contextPath}/index.jsp"><i
@@ -91,19 +93,38 @@
 			</section>
 			<!-- 内容头部 /-->
 
-			<form action="${pageContext.request.contextPath}/deviceType/save.do"
+			<form action="${pageContext.request.contextPath}/deviceDetail/save.do"
 				method="post">
 				<!-- 正文区域 -->
 				<section class="content"> <!--产品信息-->
 
 				<div class="panel panel-default">
-					<div class="panel-heading">添加设备类型</div>
+					<div class="panel-heading">设备信息</div>
 					<div class="row data-type">
 
-						<div class="col-md-2 title">设备类型</div>
+						<div class="col-md-2 title">设备名称</div>
 						<div class="col-md-4 data">
-							<input type="text" class="form-control" name="deviceType"
-								placeholder="请输入设备类型" value="">
+							<input type="text" class="form-control" name="name"
+								placeholder="请输入设备名称" value="">
+						</div>
+
+						<div class="col-md-2 title">设备种类</div>
+						<div class="col-md-4 data">
+							<select class="form-control select2" style="width: 100%"
+									name="id">
+								<c:forEach items="${deviceTypes}" var="deviceType">
+									<option value="${deviceType.id}">${deviceType.deviceType}</option>
+								</c:forEach>
+							</select>
+						</div>
+
+						<div class="col-md-2 title">设备状态</div>
+						<div class="col-md-4 data">
+							<select class="form-control select2" style="width: 100%"
+								name="online">
+								<option value="0" selected="selected">不在线</option>
+								<option value="1">在线</option>
+							</select>
 						</div>
 
 					</div>
@@ -120,15 +141,7 @@
 		</div>
 		<!-- 内容区域 /-->
 
-		<!-- 底部导航 -->
-		<footer class="main-footer">
-		<div class="pull-right hidden-xs">
-			<b>Version</b> 1.0.8
-		</div>
-		<strong>Copyright &copy; 2014-2017 <a
-			href="http://www.itcast.cn">研究院研发部</a>.
-		</strong> All rights reserved. </footer>
-		<!-- 底部导航 /-->
+
 
 	</div>
 

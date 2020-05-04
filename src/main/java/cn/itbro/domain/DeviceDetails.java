@@ -3,7 +3,7 @@ package cn.itbro.domain;
 public class DeviceDetails {
 
     private int id;
-    private int device_type_id;
+    private int deviceTypeId;
     private String name;
      //    0不在线，1在线
     private int online;
@@ -19,12 +19,12 @@ public class DeviceDetails {
         this.id = id;
     }
 
-    public int getDevice_type_id() {
-        return device_type_id;
+    public int getDeviceTypeId() {
+        return deviceTypeId;
     }
 
-    public void setDevice_type_id(int device_type_id) {
-        this.device_type_id = device_type_id;
+    public void setDeviceTypeId(int deviceTypeId) {
+        this.deviceTypeId = deviceTypeId;
     }
 
     public String getName() {
@@ -45,10 +45,10 @@ public class DeviceDetails {
 
     public String getOnlineStr() {
         if(online==0){
-            onlineStr="在线";
+            onlineStr="不在线";
         }
         if (online==1){
-            onlineStr="不在线";
+            onlineStr="在线";
         }
         return onlineStr;
     }
@@ -69,7 +69,7 @@ public class DeviceDetails {
     public String toString() {
         return "DeviceDetails{" +
                 "id=" + id +
-                ", device_type_id=" + device_type_id +
+                ", deviceTypeId=" + deviceTypeId +
                 ", name='" + name + '\'' +
                 ", online=" + online +
                 ", onlineStr='" + onlineStr + '\'' +
