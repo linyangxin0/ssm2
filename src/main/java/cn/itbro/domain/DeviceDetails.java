@@ -1,5 +1,7 @@
 package cn.itbro.domain;
 
+import java.util.List;
+
 public class DeviceDetails {
 
     private int id;
@@ -9,7 +11,15 @@ public class DeviceDetails {
     private int online;
     private String onlineStr;
     private DeviceType deviceType;
+    private List<Songs> songs;
 
+    public List<Songs> getSongs() {
+        return songs;
+    }
+
+    public void setSongs(List<Songs> songs) {
+        this.songs = songs;
+    }
 
     public int getId() {
         return id;
@@ -74,6 +84,7 @@ public class DeviceDetails {
                 ", online=" + online +
                 ", onlineStr='" + onlineStr + '\'' +
                 ", deviceType=" + deviceType +
+                ", songs=" + songs +
                 '}';
     }
 }

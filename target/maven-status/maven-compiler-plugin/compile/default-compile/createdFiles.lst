@@ -13,12 +13,14 @@ cn\itbro\controller\RoleController.class
 cn\itbro\dao\ISysLogDao.class
 cn\itbro\service\SongsService.class
 cn\itbro\service\IDeviceDetailService.class
+cn\itbro\service\IEquipmentMusicService.class
 cn\itbro\utils\DateStringEditor.class
 cn\itbro\service\IPermissionService.class
 cn\itbro\controller\LogAop.class
 cn\itbro\controller\UserController.class
 cn\itbro\controller\PermissionController.class
 cn\itbro\domain\Permission.class
+cn\itbro\dao\IEquipmentMusicDao.class
 cn\itbro\domain\Songs.class
 cn\itbro\utils\DateUtils.class
 cn\itbro\domain\DeviceType.class
@@ -26,7 +28,9 @@ cn\itbro\service\impl\DeviceDetailServiceImpl.class
 cn\itbro\service\impl\UserServiceImpl.class
 cn\itbro\service\impl\RoleServiceImpl.class
 cn\itbro\dao\IRoleDao.class
+cn\itbro\service\impl\EquipmentMusicImpl.class
 cn\itbro\service\impl\PermissionServiceImpl.class
+cn\itbro\controller\EquipmentMusicController.class
 cn\itbro\dao\ISongsDao.class
 cn\itbro\service\impl\SongsServiceImpl.class
 cn\itbro\dao\IDeviceTypeDao.class

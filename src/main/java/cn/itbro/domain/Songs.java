@@ -14,7 +14,23 @@ public class Songs implements Serializable {
     private Date updateTime;
     private String updateTimeStr;
     private int sort;
+    //0设计中 1发布
     private int status;
+    private String statusStr;
+
+    public String getStatusStr() {
+        if (status==0){
+            statusStr="设计中";
+        }
+        if (status==1){
+            statusStr="发布";
+        }
+        return statusStr;
+    }
+
+    public void setStatusStr(String statusStr) {
+        this.statusStr = statusStr;
+    }
 
     public String getUpdateTimeStr() {
         if(updateTime!=null){

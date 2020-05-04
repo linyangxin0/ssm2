@@ -35,11 +35,14 @@ public class SongsController {
     @Secured("ROLE_ADMIN")
     public String addSong(@RequestParam(name = "name",required = true)String name,
                           @RequestParam(name = "title",required = true)String title,
-                          @RequestParam(name = "status",required = true)int status){
+                          @RequestParam(name = "status",required = true)String status){
+
+        int cStatus = Integer.parseInt(status);
+
         Songs song = new Songs();
         song.setName(name);
         song.setTitle(title);
-        song.setStatus(status);
+        song.setStatus(cStatus);
         song.setSort(0);
         song.setUpdateTime(new Date());
 

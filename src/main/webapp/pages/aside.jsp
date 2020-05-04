@@ -98,8 +98,8 @@
                 <ul class="treeview-menu">
 
                     <li id="system-setting"><a
-                            href="${pageContext.request.contextPath}/product/findAll.do">
-                        <i class="fa fa-circle-o"></i> 产品管理
+                            href="${pageContext.request.contextPath}/equipmentMusic/findAll.do">
+                        <i class="fa fa-circle-o"></i> 设备音乐管理
                     </a></li>
                     <li id="system-setting"><a
                             href="${pageContext.request.contextPath}/orders/findAll.do?page=1&size=4"> <i
