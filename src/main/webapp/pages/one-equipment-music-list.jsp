@@ -104,13 +104,16 @@
 						<!-- 数据表格 -->
 						<div class="table-box">
 
-							<!--工具栏-->
+							<!--工具栏 onclick="location.href='${pageContext.request.contextPath}/pages/user-add.jsp'" -->
 							<div class="pull-left">
 								<div class="form-group form-inline">
 									<div class="btn-group">
-										<button type="button" class="btn btn-default" title="新建" onclick="location.href='${pageContext.request.contextPath}/pages/user-add.jsp'">
-											<i class="fa fa-file-o"></i> 新建
-										</button>
+										<form action="/equipmentMusic/addSong.do" style="display: inline-block">
+											<input value="${deviceId}" hidden="true" name="deviceId">
+											<button type="submit" class="btn btn-default" title="新建">
+												<i class="fa fa-file-o"></i> 添加
+											</button>
+										</form>
 										
 										<button type="button" class="btn btn-default" title="刷新">
 											<i class="fa fa-refresh"></i> 刷新

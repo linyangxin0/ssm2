@@ -33,5 +33,15 @@ public class EquipmentMusicImpl implements IEquipmentMusicService {
         equipmentMusicDao.deleteSongs(songId,deviceId);
     }
 
+    @Override
+    public List<Songs> findSongsNotGet(String deviceId) {
+        return equipmentMusicDao.findSongsNotGet(deviceId);
+    }
+
+    @Override
+    public void saveSongs(String songId, String deviceId) {
+        equipmentMusicDao.saveSongs(songId,deviceId);
+    }
+
 
 }

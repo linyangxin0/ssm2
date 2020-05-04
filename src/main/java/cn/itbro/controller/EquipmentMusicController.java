@@ -48,5 +48,24 @@ public class EquipmentMusicController {
     }
 
 
+    @RequestMapping("/addSong.do")
+    public ModelAndView addSong(@RequestParam(name = "deviceId",required = true)String deviceId) throws Exception {
+        ModelAndView mv = new ModelAndView();
+        List<Songs> songs = equipmentMusicService.findSongsNotGet(deviceId);
+        System.out.println(songs);
+        mv.addObject("songs",songs);
+        mv.addObject("deviceId",deviceId);
+        mv.setViewName("one-equipment-music-add");
+        return mv;
+    }
+
+    @RequestMapping("/save.do")
+    public String saveSongs(@RequestParam(name = "songId",required = true)String songId,
+                              @RequestParam(name = "deviceId",required = true)String deviceId) throws Exception {
+        equipmentMusicService.saveSongs(songId,deviceId);
+        return "redirect:findAllSongs.do?id="+deviceId;
+    }
+
+
 
 }

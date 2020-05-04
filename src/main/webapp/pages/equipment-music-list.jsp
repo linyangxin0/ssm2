@@ -108,9 +108,9 @@
 							<div class="pull-left">
 								<div class="form-group form-inline">
 									<div class="btn-group">
-										<button type="button" class="btn btn-default" title="新建" onclick="location.href='${pageContext.request.contextPath}/pages/user-add.jsp'">
-											<i class="fa fa-file-o"></i> 新建
-										</button>
+<%--										<button type="button" class="btn btn-default" title="新建" onclick="location.href='${pageContext.request.contextPath}/pages/user-add.jsp'">--%>
+<%--											<i class="fa fa-file-o"></i> 新建--%>
+<%--										</button>--%>
 										
 										<button type="button" class="btn btn-default" title="刷新">
 											<i class="fa fa-refresh"></i> 刷新
@@ -149,7 +149,6 @@
 											<td>${deviceDetail.name }</td>
 											<td class="text-center">
 												<a href="${pageContext.request.contextPath}/equipmentMusic/findAllSongs.do?id=${deviceDetail.id}" class="btn bg-olive btn-xs">查看歌单</a>
-												<a href="${pageContext.request.contextPath}/user/findUserByIdAndAllRole.do?id=${user.id}" class="btn bg-olive btn-xs">添加角色</a>
 											</td>
 										</tr>
 									</c:forEach>

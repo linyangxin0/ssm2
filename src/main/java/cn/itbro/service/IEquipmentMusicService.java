@@ -12,4 +12,8 @@ public interface IEquipmentMusicService {
     List<Songs> findAllSongsById(String id);
 
     void deleteSongs(String songId, String deviceId);
+
+    List<Songs> findSongsNotGet(String deviceId);
+
+    void saveSongs(String songId, String deviceId);
 }
