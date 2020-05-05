@@ -1,5 +1,6 @@
 package cn.itbro.dao;
 
+import cn.itbro.domain.Singer;
 import cn.itbro.domain.Songs;
 import org.apache.ibatis.annotations.Delete;
 import org.apache.ibatis.annotations.Insert;
@@ -37,4 +38,7 @@ public interface ISongsDao {
 
     @Delete("delete from songs where id=#{id}")
     public void deleteSongById(String id);
+
+    @Select("select * from singer where id=#{singerId}")
+    Singer getSingerBySongId(String singerId);
 }

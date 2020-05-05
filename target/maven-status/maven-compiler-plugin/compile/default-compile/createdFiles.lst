@@ -11,6 +11,7 @@ cn\itbro\service\IDeviceTypeService.class
 cn\itbro\service\impl\SysLogServiceImpl.class
 cn\itbro\controller\RoleController.class
 cn\itbro\dao\ISysLogDao.class
+cn\itbro\domain\Singer.class
 cn\itbro\service\SongsService.class
 cn\itbro\service\IDeviceDetailService.class
 cn\itbro\service\IEquipmentMusicService.class

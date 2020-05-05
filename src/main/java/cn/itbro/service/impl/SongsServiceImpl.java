@@ -1,8 +1,10 @@
 package cn.itbro.service.impl;
 
 import cn.itbro.dao.ISongsDao;
+import cn.itbro.domain.Singer;
 import cn.itbro.domain.Songs;
 import cn.itbro.service.SongsService;
+import com.github.pagehelper.PageHelper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -17,7 +19,8 @@ public class SongsServiceImpl implements SongsService {
     private ISongsDao ISongsDao;
 
     @Override
-    public List<Songs> findAll() throws Exception {
+    public List<Songs> findAll(int page,int size) throws Exception {
+        PageHelper.startPage(page,size);
         return ISongsDao.findAll();
     }
 
@@ -44,5 +47,10 @@ public class SongsServiceImpl implements SongsService {
     @Override
     public void deleteSongById(String id) {
         ISongsDao.deleteSongById(id);
+    }
+
+    @Override
+    public Singer getSingerBySongId(String singerId) {
+        return ISongsDao.getSingerBySongId(singerId);
     }
 }

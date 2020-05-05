@@ -11,6 +11,7 @@ D:\ideaproject\ssm2\src\main\java\cn\itbro\service\ISysLogService.java
 D:\ideaproject\ssm2\src\main\java\cn\itbro\dao\ISongsDao.java
 D:\ideaproject\ssm2\src\main\java\cn\itbro\controller\SongsController.java
 D:\ideaproject\ssm2\src\main\java\cn\itbro\service\IDeviceDetailService.java
+D:\ideaproject\ssm2\src\main\java\cn\itbro\domain\Singer.java
 D:\ideaproject\ssm2\src\main\java\cn\itbro\service\impl\SysLogServiceImpl.java
 D:\ideaproject\ssm2\src\main\java\cn\itbro\domain\Permission.java
 D:\ideaproject\ssm2\src\main\java\cn\itbro\service\impl\DeviceDetailServiceImpl.java

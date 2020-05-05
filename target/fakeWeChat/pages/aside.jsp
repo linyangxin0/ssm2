@@ -82,7 +82,7 @@
                 <ul class="treeview-menu">
                     <li id="system-setting">
                         <a
-                                href="${pageContext.request.contextPath}/songs/findAll.do"> <i
+                                href="${pageContext.request.contextPath}/songs/findAll.do?page=1&size=4"> <i
                                 class="fa fa-circle-o"></i> 歌单
                         </a>
                     </li>

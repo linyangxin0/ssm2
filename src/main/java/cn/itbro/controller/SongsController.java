@@ -1,7 +1,9 @@
 package cn.itbro.controller;
 
+import cn.itbro.domain.Singer;
 import cn.itbro.domain.Songs;
 import cn.itbro.service.SongsService;
+import com.github.pagehelper.PageInfo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.access.annotation.Secured;
 import org.springframework.stereotype.Controller;
@@ -23,10 +25,13 @@ public class SongsController {
     private SongsService songsService;
 
     @RequestMapping("/findAll.do")
-    public ModelAndView findAll() throws Exception {
+    public ModelAndView findAll(@RequestParam(name = "page",required = true,defaultValue = "1") Integer page,
+                                @RequestParam(name = "size",required = true,defaultValue = "4")Integer size) throws Exception {
         ModelAndView mv=new ModelAndView();
-        List<Songs> songsList = songsService.findAll();
-        mv.addObject("songsList",songsList);
+        List<Songs> songsList = songsService.findAll(page,size);
+        //pageInfo就是一个分页bean
+        PageInfo pageInfo = new PageInfo(songsList);
+        mv.addObject("pageInfo",pageInfo);
         mv.setViewName("songs-list");
         return mv;
     }
@@ -87,6 +92,18 @@ public class SongsController {
     @Secured("ROLE_ADMIN")
     public @ResponseBody void deleteSong(String id) throws IOException {
         songsService.deleteSongById(id);
+    }
+
+    @RequestMapping("/getSinger.do")
+    public ModelAndView getSinger(@RequestParam(name = "singerId",required = true)String singerId){
+        System.out.println(singerId);
+
+        ModelAndView mv=new ModelAndView();
+        Singer singer = songsService.getSingerBySongId(singerId);
+
+        mv.addObject("singer",singer);
+        mv.setViewName("singer-show");
+        return mv;
     }
 
 }

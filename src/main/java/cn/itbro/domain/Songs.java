@@ -17,6 +17,15 @@ public class Songs implements Serializable {
     //0设计中 1发布
     private int status;
     private String statusStr;
+    private int singerId;
+
+    public int getSingerId() {
+        return singerId;
+    }
+
+    public void setSingerId(int singerId) {
+        this.singerId = singerId;
+    }
 
     public String getStatusStr() {
         if (status==0){
@@ -98,8 +107,11 @@ public class Songs implements Serializable {
                 ", name='" + name + '\'' +
                 ", title='" + title + '\'' +
                 ", updateTime=" + updateTime +
+                ", updateTimeStr='" + updateTimeStr + '\'' +
                 ", sort=" + sort +
                 ", status=" + status +
+                ", statusStr='" + statusStr + '\'' +
+                ", singerId=" + singerId +
                 '}';
     }
 }

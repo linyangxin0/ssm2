@@ -154,6 +154,13 @@
             <artifactId>jsr250-api</artifactId>
             <version>1.0</version>
         </dependency>
+
+<!--        分页依赖-->
+        <dependency>
+            <groupId>com.github.pagehelper</groupId>
+            <artifactId>pagehelper</artifactId>
+            <version>5.1.2</version>
+        </dependency>
     </dependencies>
 
     <build>
