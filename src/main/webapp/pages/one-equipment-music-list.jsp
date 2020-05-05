@@ -115,8 +115,8 @@
 											</button>
 										</form>
 										
-										<button type="button" class="btn btn-default" title="刷新">
-											<i class="fa fa-refresh"></i> 刷新
+										<button type="button" class="btn btn-default" title="返回" onclick="history.back(-1);">
+											<i class="fa fa-refresh"></i> 返回
 										</button>
 									</div>
 								</div>

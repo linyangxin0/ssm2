@@ -111,10 +111,6 @@
 										<button type="button" class="btn btn-default" title="新建" onclick="location.href='${pageContext.request.contextPath}/pages/user-add.jsp'">
 											<i class="fa fa-file-o"></i> 新建
 										</button>
-										
-										<button type="button" class="btn btn-default" title="刷新">
-											<i class="fa fa-refresh"></i> 刷新
-										</button>
 									</div>
 								</div>
 							</div>

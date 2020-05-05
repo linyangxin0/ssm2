@@ -115,9 +115,6 @@
 											</button>
 										</form>
 
-										<button type="button" class="btn btn-default" title="刷新">
-											<i class="fa fa-refresh"></i> 刷新
-										</button>
 									</div>
 								</div>
 							</div>
