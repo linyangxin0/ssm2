@@ -8,11 +8,12 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
+    <link rel="icon" href="${pageContext.request.contextPath}/img/logo.png">
     <script src="js/jquery-3.4.1.js"></script>
     <script src="js/login.js"></script>
     <link rel="stylesheet" type="text/css" href="css/login.css">
 
-    <title>Title</title>
+    <title>音乐后台管理界面-首页</title>
 </head>
 <body>
 

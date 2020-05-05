@@ -7,7 +7,7 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-<title>ITCAST - AdminLTE2定制版</title>
+<title>首页</title>
 <meta name="description" content="AdminLTE2定制版">
 <meta name="keywords" content="AdminLTE2定制版">
 
@@ -81,7 +81,7 @@
 <!-- Ion Slider -->
 <!-- Bootstrap slider -->
 <!-- 页面meta /-->
-
+	<link rel="icon" href="${pageContext.request.contextPath}/img/logo.png">
 <link rel="stylesheet"
 	href="${pageContext.request.contextPath}/plugins/bootstrap/css/bootstrap.min.css">
 <link rel="stylesheet"
