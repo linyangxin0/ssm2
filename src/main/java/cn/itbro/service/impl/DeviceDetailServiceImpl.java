@@ -3,6 +3,7 @@ package cn.itbro.service.impl;
 import cn.itbro.dao.IDeviceDetailDao;
 import cn.itbro.domain.DeviceDetails;
 import cn.itbro.service.IDeviceDetailService;
+import com.github.pagehelper.PageHelper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -17,7 +18,8 @@ public class DeviceDetailServiceImpl implements IDeviceDetailService {
     private IDeviceDetailDao deviceDetailDao;
 
     @Override
-    public List<DeviceDetails> findAll() {
+    public List<DeviceDetails> findAll(int page,int size) {
+        PageHelper.startPage(page,size);
         return deviceDetailDao.findAll();
     }
 

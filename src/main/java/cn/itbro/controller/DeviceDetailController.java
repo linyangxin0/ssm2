@@ -4,6 +4,7 @@ import cn.itbro.domain.DeviceDetails;
 import cn.itbro.domain.DeviceType;
 import cn.itbro.service.IDeviceDetailService;
 import cn.itbro.service.IDeviceTypeService;
+import com.github.pagehelper.PageInfo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -34,11 +35,13 @@ public class DeviceDetailController {
     }
 
     @RequestMapping("/findAll.do")
-    public ModelAndView findAll(){
+    public ModelAndView findAll(@RequestParam(name = "page",required = true,defaultValue = "1") Integer page,
+                                @RequestParam(name = "size",required = true,defaultValue = "4")Integer size){
         ModelAndView mv= new ModelAndView();
-        List<DeviceDetails> deviceDetails = deviceDetailService.findAll();
+        List<DeviceDetails> deviceDetails = deviceDetailService.findAll(page,size);
         List<DeviceType> deviceTypes=deviceTypeService.findAll();
-        mv.addObject("deviceDetails",deviceDetails);
+        PageInfo pageInfo = new PageInfo(deviceDetails);
+        mv.addObject("pageInfo",pageInfo);
         mv.addObject("deviceTypes",deviceTypes);
         mv.setViewName("device-detail-list");
         return mv;

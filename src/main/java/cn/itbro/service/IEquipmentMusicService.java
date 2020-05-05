@@ -6,7 +6,7 @@ import cn.itbro.domain.Songs;
 import java.util.List;
 
 public interface IEquipmentMusicService {
-    List<DeviceDetails> findAll();
+    List<DeviceDetails> findAll(int var1, int var2);
 
 
     List<Songs> findAllSongsById(String id);

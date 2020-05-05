@@ -5,7 +5,7 @@ import cn.itbro.domain.DeviceDetails;
 import java.util.List;
 
 public interface IDeviceDetailService {
-    List<DeviceDetails> findAll();
+    List<DeviceDetails> findAll(int var1, int var2);
 
     void deleteDeviceType(String id);
 

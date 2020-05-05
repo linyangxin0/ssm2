@@ -5,6 +5,7 @@ import cn.itbro.domain.DeviceDetails;
 
 import cn.itbro.domain.Songs;
 import cn.itbro.service.IEquipmentMusicService;
+import com.github.pagehelper.PageInfo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -21,10 +22,12 @@ public class EquipmentMusicController {
     private IEquipmentMusicService equipmentMusicService;
 
     @RequestMapping("/findAll.do")
-    public ModelAndView findAll() throws Exception {
+    public ModelAndView findAll(@RequestParam(name = "page",required = true,defaultValue = "1") Integer page,
+                                @RequestParam(name = "size",required = true,defaultValue = "4")Integer size) throws Exception {
         ModelAndView mv = new ModelAndView();
-        List<DeviceDetails> deviceDetails = equipmentMusicService.findAll();
-        mv.addObject("deviceDetails",deviceDetails);
+        List<DeviceDetails> deviceDetails = equipmentMusicService.findAll(page,size);
+        PageInfo pageInfo = new PageInfo(deviceDetails);
+        mv.addObject("pageInfo",pageInfo);
         mv.setViewName("equipment-music-list");
         return mv;
     }
