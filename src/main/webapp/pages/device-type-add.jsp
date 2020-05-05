@@ -85,8 +85,8 @@
 				<li><a href="${pageContext.request.contextPath}/index.jsp"><i
 						class="fa fa-dashboard"></i> 首页</a></li>
 				<li><a
-					href="${pageContext.request.contextPath}/user/findAll.do">用户管理</a></li>
-				<li class="active">用户表单</li>
+					href="${pageContext.request.contextPath}/deviceType/findAll.do">类型管理</a></li>
+				<li class="active">设备表单</li>
 			</ol>
 			</section>
 			<!-- 内容头部 /-->

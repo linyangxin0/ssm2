@@ -81,14 +81,14 @@
 			<!-- 内容头部 -->
 			<section class="content-header">
 			<h1>
-				用户管理 <small>用户表单</small>
+				新建设备 <small>用户表单</small>
 			</h1>
 			<ol class="breadcrumb">
 				<li><a href="${pageContext.request.contextPath}/index.jsp"><i
 						class="fa fa-dashboard"></i> 首页</a></li>
 				<li><a
-					href="${pageContext.request.contextPath}/user/findAll.do">用户管理</a></li>
-				<li class="active">用户表单</li>
+					href="${pageContext.request.contextPath}/deviceDetail/findAll.do">设备详情</a></li>
+				<li class="active">设备表单</li>
 			</ol>
 			</section>
 			<!-- 内容头部 /-->

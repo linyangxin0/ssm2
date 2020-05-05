@@ -84,9 +84,6 @@
 			<ol class="breadcrumb">
 				<li><a href="${pageContext.request.contextPath}/index.jsp"><i
 						class="fa fa-dashboard"></i> 首页</a></li>
-				<li><a
-					href="${pageContext.request.contextPath}/role/findAll.do">角色管理</a></li>
-
 				<li class="active">全部角色</li>
 			</ol>
 			</section>

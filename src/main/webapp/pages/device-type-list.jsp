@@ -79,15 +79,14 @@
 			<!-- 内容头部 -->
 			<section class="content-header">
 			<h1>
-				用户管理 <small>全部用户</small>
+				设备类型<small>全部类型</small>
 			</h1>
 			<ol class="breadcrumb">
 				<li><a href="${pageContext.request.contextPath}/index.jsp"><i
 						class="fa fa-dashboard"></i> 首页</a></li>
-				<li><a
-					href="${pageContext.request.contextPath}/user/findAll.do">用户管理</a></li>
 
-				<li class="active">全部用户</li>
+
+				<li class="active">全部类型</li>
 			</ol>
 			</section>
 			<!-- 内容头部 /-->

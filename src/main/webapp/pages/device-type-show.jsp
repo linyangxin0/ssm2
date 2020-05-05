@@ -79,15 +79,15 @@
 			<!-- 内容头部 -->
 			<section class="content-header">
 			<h1>
-				角色管理 <small>全部角色</small>
+				设备查看 <small>类型设备</small>
 			</h1>
 			<ol class="breadcrumb">
 				<li><a href="${pageContext.request.contextPath}/index.jsp"><i
 						class="fa fa-dashboard"></i> 首页</a></li>
 				<li><a
-					href="${pageContext.request.contextPath}/user/findAll.do">角色管理</a></li>
+					href="${pageContext.request.contextPath}/deviceType/findAll.do">设备类型</a></li>
 
-				<li class="active">全部角色</li>
+				<li class="active">设备查看</li>
 			</ol>
 			</section>
 			<!-- 内容头部 /-->
