@@ -9,7 +9,7 @@ public interface IEquipmentMusicService {
     List<DeviceDetails> findAll(int var1, int var2);
 
 
-    List<Songs> findAllSongsById(String id);
+    List<Songs> findAllSongsById(String id,int var1, int var2);
 
     void deleteSongs(String songId, String deviceId);
 

@@ -33,10 +33,13 @@ public class EquipmentMusicController {
     }
 
     @RequestMapping("/findAllSongs.do")
-    public ModelAndView findAllSongs(@RequestParam(name = "id",required = true)String id) throws Exception {
+    public ModelAndView findAllSongs(@RequestParam(name = "id",required = true)String id,
+                                     @RequestParam(name = "page",required = true,defaultValue = "1") Integer page,
+                                     @RequestParam(name = "size",required = true,defaultValue = "4")Integer size) throws Exception {
         ModelAndView mv = new ModelAndView();
-        List<Songs> songs = equipmentMusicService.findAllSongsById(id);
-        mv.addObject("songs",songs);
+        List<Songs> songs = equipmentMusicService.findAllSongsById(id,page,size);
+        PageInfo pageInfo = new PageInfo(songs);
+        mv.addObject("pageInfo",pageInfo);
         mv.addObject("deviceId",id);
         mv.setViewName("one-equipment-music-list");
         return mv;

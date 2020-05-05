@@ -25,7 +25,8 @@ public class EquipmentMusicImpl implements IEquipmentMusicService {
     }
 
     @Override
-    public List<Songs> findAllSongsById(String id) {
+    public List<Songs> findAllSongsById(String id,int page,int size) {
+        PageHelper.startPage(page,size);
         return equipmentMusicDao.findAllSongsById(id);
 
     }
