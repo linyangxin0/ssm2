@@ -4,6 +4,7 @@ import cn.itbro.dao.IUserDao;
 import cn.itbro.domain.Role;
 import cn.itbro.domain.UserInfo;
 import cn.itbro.service.IUserService;
+import com.github.pagehelper.PageHelper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.User;
@@ -54,7 +55,8 @@ public class UserServiceImpl implements IUserService {
     }
 
     @Override
-    public List<UserInfo> findAll() {
+    public List<UserInfo> findAll(int page,int size) {
+        PageHelper.startPage(page,size);
         return userDao.findAll();
     }
 

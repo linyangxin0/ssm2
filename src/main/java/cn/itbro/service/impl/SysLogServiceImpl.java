@@ -3,6 +3,7 @@ package cn.itbro.service.impl;
 import cn.itbro.dao.ISysLogDao;
 import cn.itbro.domain.SysLog;
 import cn.itbro.service.ISysLogService;
+import com.github.pagehelper.PageHelper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -22,7 +23,8 @@ public class SysLogServiceImpl implements ISysLogService {
     }
 
     @Override
-    public List<SysLog> findAll() {
+    public List<SysLog> findAll(int page,int size) {
+        PageHelper.startPage(page,size);
         return sysLogDao.findAll();
     }
 }

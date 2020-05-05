@@ -6,7 +6,7 @@ import java.util.List;
 
 public interface IPermissionService {
 
-    public List<Permission> findAll();
+    public List<Permission> findAll(int var1, int var2);
 
     void save(Permission permission);
 

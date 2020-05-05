@@ -5,6 +5,7 @@ import cn.itbro.domain.Role;
 import cn.itbro.domain.UserInfo;
 import cn.itbro.service.IUserService;
 import cn.itbro.utils.BCryptPasswordEncoderUtils;
+import com.github.pagehelper.PageInfo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.access.annotation.Secured;
 import org.springframework.security.access.prepost.PreAuthorize;
@@ -37,10 +38,12 @@ public class UserController {
     }
 
     @RequestMapping("/findAll.do")
-    public ModelAndView findAll() throws Exception {
+    public ModelAndView findAll(@RequestParam(name = "page",required = true,defaultValue = "1") Integer page,
+                                @RequestParam(name = "size",required = true,defaultValue = "4")Integer size) throws Exception {
         ModelAndView mv = new ModelAndView();
-        List<UserInfo> userList = userService.findAll();
-        mv.addObject("userList",userList);
+        List<UserInfo> userList = userService.findAll(page,size);
+        PageInfo pageInfo = new PageInfo(userList);
+        mv.addObject("pageInfo",pageInfo);
         mv.setViewName("user-list");
         return mv;
     }

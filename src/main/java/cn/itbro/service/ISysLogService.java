@@ -6,7 +6,7 @@ import java.util.List;
 
 public interface ISysLogService {
 
-    List<SysLog> findAll();
+    List<SysLog> findAll(int var1, int var2);
 
     public void save(SysLog sysLog);
 }
